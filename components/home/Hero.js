@@ -7,7 +7,7 @@ import temple_silhoutte from "../../assets/images/temple-silhoutte.png";
 import { useEffect, useState } from "react";
 
 const Hero = () => {
-    const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => setLoaded(true), 0);
@@ -17,7 +17,13 @@ const Hero = () => {
     <div className="w-full h-[600px] bg-[#C95D2F] ">
       <div className="max-w-[1440px] w-full h-[600px] flex justify-end items-end overflow-hidden m-auto">
         <div className="relative w-full h-[640px]">
-          <div className="absolute top-30 left-10 w-[700px] flex flex-col gap-10 z-11">
+          <div
+            className={`
+    absolute top-30 left-10 w-[700px] flex flex-col gap-10 z-10
+    transition-all duration-[1600ms] ease-in-out
+    ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
+  `}
+          >
             <h1 className="text-white text-[57px] ">
               <span className="text-[#F6EBC1] font-bold">
                 Triyuginarayan Temple :
@@ -36,9 +42,8 @@ const Hero = () => {
             </div>
           </div>
           <div
-            className={`absolute bottom-0 right-20  w-[500px] h-[500px] transition-transform duration-1600 ease-in-out ${
-              loaded ? "translate-y-0" : "translate-y-full"
-            } z-20`}
+            className={`absolute bottom-0 right-20  w-[500px] h-[500px] transition-transform duration-1600 ease-in-out ${loaded ? "translate-y-0" : "translate-y-full"
+              } z-20`}
           >
             <Image
               src={shiv_parvati}
@@ -48,9 +53,8 @@ const Hero = () => {
             />
           </div>
           <div
-            className={`absolute bottom-10 right-20 animate-spin  w-[500px] h-[500px] transition-transform duration-1600 ease-in-out ${
-              loaded ? "translate-y-0" : "translate-y-full"
-            } z-19 spin-slow`}
+            className={`absolute bottom-10 right-20 animate-spin  w-[500px] h-[500px] transition-transform duration-1600 ease-in-out ${loaded ? "translate-y-0" : "translate-y-full"
+              } z-19 spin-slow`}
           >
             <Image
               src={mantra}
