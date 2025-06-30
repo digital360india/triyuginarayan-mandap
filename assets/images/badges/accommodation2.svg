@@ -1,0 +1,6 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="60" cy="60" r="60" fill="#C95D2F"/>
+<path d="M55.3332 78.6667V64.6667H64.6665V78.6667H76.3332V60H83.3332L59.9998 39L36.6665 60H43.6665V78.6667H55.3332Z" fill="white"/>
+<circle cx="60" cy="60" r="60" transform="matrix(-1 0 0 1 120 0)" fill="white"/>
+<path d="M64.6668 78.6667V64.6667H55.3335V78.6667H43.6668V60H36.6668L60.0002 39L83.3335 60H76.3335V78.6667H64.6668Z" fill="#C95D2F"/>
+</svg>

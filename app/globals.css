@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -10,17 +10,68 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+}*/
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #f6ebc1;
+}
+ 
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+.spin-slow {
+  animation: spin 20s linear infinite;
+}
+
+/* Container: Provides 3D space */
+.flip-container {
+  perspective: 1000px;
+  width: 120px;   /* example size */
+  height: 120px;
+}
+
+/* Inner flipping element */
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+/* Flip on hover */
+.flip-container:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front and back faces */
+.flip-front, .flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+}
+
+/* Front face: visible initially */
+.flip-front {
+  transform: rotateY(0deg);
+}
+
+/* Back face: flipped so it appears correct after rotateY */
+.flip-back {
+  transform: rotateY(180deg);
 }
