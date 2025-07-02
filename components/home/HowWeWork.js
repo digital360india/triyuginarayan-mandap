@@ -62,7 +62,7 @@ const StepBox = ({ step }) => {
           className={`flex px-6 transition-opacity duration-500 gap-16 p-10`}
         >
             <div className="w-[13rem] flex flex-col z-10">
-          <h2 className="text-[1.4rem] font-semibold mb-2">{step.title}</h2>
+          <p className="text-[1.4rem] font-semibold mb-2">{step.title}</p>
           <p className="text-[1rem] text-gray-600">{step.description}</p>
             </div>
             <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center">
