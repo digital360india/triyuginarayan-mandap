@@ -1,4 +1,5 @@
-import React from "react";
+'use client'
+import React, { useState } from "react";
 import Image from "next/image";
 import rituals from "../../assets/images/rituals.png";
 import couple from "../../assets/images/couple.png";
@@ -7,6 +8,16 @@ import triyuginarayan_temple from "../../assets/images/triyuginarayan-temple.png
 import choose_us from "../../assets/images/choose-us.png";
 
 const TriyuginarayanOverview = () => {
+   const [liked, setLiked] = useState(false);
+  const [animate, setAnimate] = useState(false);
+
+  const handleClick = () => {
+    setLiked(!liked);
+    setAnimate(true);
+
+    // Remove animation class after animation completes (e.g., 300ms)
+    setTimeout(() => setAnimate(false), 300);
+  };
 
   return (
     <div>
@@ -94,10 +105,28 @@ const TriyuginarayanOverview = () => {
           </div>
       </div>
 
-      <p>
-        “ If your says Yes to peace, tradition, and real blessings — then
-        Triyuginarayan is waiting for you.”
+       <div className="bg-[#fcf0c3] p-6 text-lg font-serif text-black text-center">
+      <p className="text-[3rem]">
+        “ If your{" "}
+        {/* <Image
+          src={liked ? "/heart-filled.svg" : "/heart-outline.svg"}
+          alt="heart"
+          className={`inline-block w-10 h-10 cursor-pointer align-middle transition-transform duration-300 ${
+            animate ? "scale-125" : "scale-100"
+          }`}
+          width={132}
+          height={132}
+          onClick={handleClick}
+        />{" "} */}
+        says <span className="text-[#c8552f] font-semibold">Yes</span> to{" "}
+        <span className="text-[#c8552f] font-semibold">
+          peace, tradition, and real blessings
+        </span>{" "}
+        — then{" "}
+        <span className="text-[#c8552f] font-semibold">Triyuginarayan</span> is
+        waiting for you.”
       </p>
+    </div>
     </div>
   );
 };

@@ -4,8 +4,8 @@ import star_gif from "../../assets/images/star-gif.gif";
 
 const NotPlanners = () => {
   return (
-    <div className="max-w-[1440px] m-auto mt-25 flex  items-center text-center px-4">
-      <div className="flex flex-wrap justify-center items-center text-[3.75rem] font-bold leading-tight">
+    <div className="max-w-[1440px] m-auto mt-25 flex items-center gap-10 px-10">
+      <div className="flex flex-wrap justify-center items-center text-[3.75rem] font-bold leading-tight w-[600px]">
         Not&nbsp;
         <span className="text-[#C95D2F]">Planners.</span>&nbsp;Facilitators of&nbsp;
         <span className="text-[#C95D2F]">Blessings.</span>&nbsp;
@@ -14,7 +14,7 @@ const NotPlanners = () => {
         </span>
       </div>
 
-      <p className="mt-[2.19rem] max-w-[900px] text-lg">
+      <p className="mt-[2.19rem] max-w-[700px] text-lg">
         We don’t call ourselves “wedding planners.” We are facilitators of
         sacred bonds — people who understand that a marriage is not just about
         lights and music, but about blessings, rituals, and true beginnings.

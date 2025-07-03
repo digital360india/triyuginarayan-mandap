@@ -2,7 +2,7 @@ import React from 'react'
 
 const ClosingNote = () => {
   return (
-    <div>ClosingNote</div>
+    <div className='text-center mt-25 mb-25'>ClosingNote</div>
   )
 }
 
