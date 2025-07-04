@@ -11,7 +11,7 @@ const WeddingForm = () => {
         <div className="w-full flex justify-end">
         <Image src={arrow} alt="image" />
         </div>
-        <p className="text-[3.25rem] font-bold lora leading-tigh">Let's Begin your wedding journey with the <span className="text-[#C95D2F]">Blessing Of Gods.</span></p>
+        <p className="text-[3.25rem] font-bold lora leading-tigh">Let’s Begin your wedding journey with the <span className="text-[#C95D2F]">Blessing Of Gods.</span></p>
         <p>
           Please fill in the details below to help us understand your wedding
           needs. Our team will reach out with complete guidance and support.

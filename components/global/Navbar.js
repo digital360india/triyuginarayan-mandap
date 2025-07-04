@@ -41,7 +41,7 @@ const Navbar = () => {
 
   useEffect(() => {
     setTimeout(() => setAnimate(true), 100);
-  }, []);
+  }, [links]);
 
   useEffect(() => {
     const activeIndex = links.findIndex((link) => link.href === pathName);
