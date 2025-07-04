@@ -41,7 +41,7 @@ const WeddingForm = () => {
           <div className="flex flex-col gap-4 mx-auto">
             <label htmlFor="" className="font-semibold">
               {" "}
-              Bride's Name{" "}
+              Bride&apos;s Name{" "}
             </label>
             <input
               type="text"
