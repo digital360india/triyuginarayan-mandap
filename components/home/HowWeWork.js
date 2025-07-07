@@ -76,16 +76,16 @@ const StepBox = ({ step }) => {
 
 const HowWeWork = () => {
   return (
-    <div className="w-7xl px-10 mt-25 m-auto">
-      <p className="text-center text-[2.25rem] font-bold">
+    <div className="md:w-7xl px-10 mt-25 m-auto space-y-6">
+      <p className="text-center text-[1.8rem] md:text-[2.25rem] font-bold">
         How We <span className="text-[#D7764D]">Work</span>
       </p>
-      <p className="text-center text-[1rem] mt-[2.19rem]">
+      <p className="text-center text-[1rem] md:text-lg mt-[2.19rem]">
         Booking your Triyuginarayan temple wedding is just a few simple steps
         away.
       </p>
 
-      <div className="flex gap-10 overflow-x-auto m-auto mt-[3.35rem]">
+      <div className="hidden gap-10 overflow-x-auto m-auto mt-[3.35rem] md:flex">
         {steps.map((step, index) => (
           <StepBox key={index} step={step} />
         ))}

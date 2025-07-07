@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Faq } from "../../assets/faqs";
+import { FaPlus ,FaMinus  } from "react-icons/fa6";
 
 const Faqs = () => {
   const [isOpen, setIsOpen] = useState(null);
@@ -11,7 +12,7 @@ const Faqs = () => {
 
   return (
     <div className="max-w-[1440px] m-auto mt-25 px-4 mb-24">
-      <p className="text-center text-[2.25rem] font-semibold mb-10">
+      <p className="text-center text-[2.25rem] font-semibold mb-6 md:mb-10">
         Frequently <span className="text-[#C95D2F]">Asked</span> Questions
       </p>
       <div className="w-full max-w-[1000px] flex flex-col gap-6 mx-auto">
@@ -24,7 +25,7 @@ const Faqs = () => {
               aria-controls={`faq-content-${index}`}
             >
               <p className="font-semibold">{faq.question}</p>
-              <span className="text-xl">{isOpen === index ? "-" : "+"}</span>
+              <span className="text-[1.2rem]">{isOpen === index ? <FaMinus /> : <FaPlus/>}</span>
             </div>
             <div
               id={`faq-content-${index}`}

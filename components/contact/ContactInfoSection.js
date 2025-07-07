@@ -7,15 +7,20 @@ import assistant from "../../assets/images/badges/assistant.svg";
 const ContactInfoSection = () => {
   return (
     <div className="bg-white">
-    <div className="w-full max-w-[1440px] px-6 py-12  text-center mt-25 m-auto">
+    <div className="w-full max-w-[1440px] md:px-6 py-12  text-center mt-25 m-auto">
       <div className="max-w-3xl mx-auto">
-        <div className="flex items-center justify-center gap-4">
-          <p className="text-[3.25rem] font-bold mb-4 lora">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+          <span className="block md:hidden">
+          <Image src={assistant} alt="image" className="w-[4.8rem]" />
+          </span>
+          <p className="text-[2.5rem] md:text-[3.25rem] font-bold mb-4 lora px-8">
             Get in <span className="text-[#C95D2F]">Touch</span> with Us
           </p>
+          <span className="hidden md:flex">
           <Image src={assistant} alt="image" className="w-[4.8rem]" />
+          </span>
         </div>
-        <p className="text-lg open-sans mt-6">
+        <p className="text-[1rem] md:text-lg open-sans mt-6 px-8 md:px-0 text-justify md:text-center">
           We’re always here to help you with any questions or doubts related to
           weddings or our services. Feel free to reach out via email or call
           anytime between{" "}
@@ -24,19 +29,19 @@ const ContactInfoSection = () => {
           </span>
         </p>
 
-        <div className="flex flex-col md:flex-row justify-center items-center gap-10 mt-10">
-          <div className="flex gap-6 text-lg">
+        <div className="flex flex-col md:flex-row justify-center items-start md:items-center gap-10 mt-10 px-8 md:px-0">
+          <div className="flex gap-6 text-[1rem] md:text-lg">
             <Image src={whatsapp} alt="image" />
             <div className="text-start">
               <p className="font-bold">Contact us</p>
               <p>+91-9023577149</p>
             </div>
           </div>
-          <div className="flex gap-6 text-lg">
+          <div className="flex gap-6 text-[1rem] md:text-lg">
             <Image src={email} alt="image" />
             <div className="text-start">
               <p className="font-bold">Email us</p>
-              <p>ontact@triyuginarayanmandap.in</p>
+              <p>contact@triyuginarayanmandap.in</p>
             </div>
           </div>
         </div>
@@ -47,7 +52,7 @@ const ContactInfoSection = () => {
           <div className="w-[300px] h-[1px] bg-black " />
         </div>
 
-        <div className="w-full mx-auto flex flex-col gap-8 mt-10">
+        <div className="w-full mx-auto flex flex-col gap-8 mt-10 text-[1rem] md:text-lg open-sans px-8 md:px-0">
           <p>
             You can also fill out the form below and we’ll get back to you as
             soon as possible.

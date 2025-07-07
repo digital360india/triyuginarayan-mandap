@@ -4,13 +4,13 @@ import why_triyuginarayan from "../../assets/images/why-triyuginarayan.png";
 
 const WhyTriyuginarayan = () => {
   return (
-    <div className="max-w-[1440px] w-[90%] m-auto mt-25 flex">
-      <div className="w-2xl flex flex-col justify-center items-start gap-7">
-        <p className="text-[2.25rem] font-bold">
+    <div className="max-w-[1440px] w-full md:w-[90%] m-auto mt-25 flex flex-col md:flex-row gap-10">
+      <div className="w-full md:w-2xl flex flex-col justify-center items-start px-8 space-y-6 md:px-0">
+        <p className="text-[1.8rem] md:text-[2.25rem] font-bold text-center md:text-start">
           Why Only &nbsp;
           <span className="text-[#C95D2F]">Triyuginarayan?</span>
         </p>
-        <p className="mt-[2.19rem]">
+        <p className="md:mt-[2.19rem] text-[1rem] md:text-lg text-justify md:text-start">
           We don’t do weddings everywhere. We serve only one place —
           Triyuginarayan Temple — because we truly believe this is not an
           ordinary wedding venue. This is the original mandap, where the eternal
@@ -21,8 +21,8 @@ const WhyTriyuginarayan = () => {
           family.
         </p>
       </div>
-      <div className=" flex justify-center items-center w-lg">
-        <Image src={why_triyuginarayan} alt="img" />
+      <div className="w-full flex justify-center items-center md:w-lg">
+        <Image src={why_triyuginarayan} alt="img" className="w-[18rem] md:w-[20rem]" />
       </div>
       
     </div>

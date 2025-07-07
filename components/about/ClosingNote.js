@@ -1,31 +1,61 @@
-import Image from 'next/image'
-import React from 'react'
-import mail from '../../assets/images/mail.png'
-import logo from '../../assets/images/logo/logo.svg'
+import Image from "next/image";
+import React from "react";
+import mail from "../../assets/images/mail.png";
+import logo from "../../assets/images/logo/logo.svg";
+import message_frame from "../../assets/images/message-frame.png";
 
 const ClosingNote = () => {
   return (
-    <div className='text-center mt-25 mb-25 max-w-[1440px] mx-auto h-[38rem]'>
-      <div className='relative flex justify-center '>
-      <div className='bg-[#C95D2F] w-[25rem] h-[25rem] rounded-full absolute top-5 left-24 z-0'/>
-      <div className='z-2 relative'>
-      <Image src={mail} alt='image' />
-      <div className=' absolute top-24 right-10 space-y-7'>
-        <div className='flex items-end justify-end'>
-        <Image src={logo} alt='image' />
+    <div className="mt-25 mb-25 max-w-[1440px] mx-auto h-[38rem]">
+      <div className="hidden relative md:flex justify-center ">
+        <div className="bg-[#C95D2F] w-[10rem] h-[10rem] md:w-[25rem] md:h-[25rem] rounded-full absolute top-5 left-24 z-0" />
+        <div className="z-2 relative">
+          <Image src={mail} alt="image" />
+          <div className=" absolute top-24 right-10 space-y-6">
+            <div className="flex items-end justify-end">
+              <Image src={logo} alt="image" />
+            </div>
+            <p className="text-[2.375rem] italic font-bold lora w-[20rem] leading-tight">
+              “From our <span className="text-[#C95D2F]">home</span> in the{" "}
+              <span className="text-[#C95D2F]">hills</span> to{" "}
+              <span className="text-[#C95D2F]">yours”</span>
+            </p>
+            <div className="flex flex-col justify-end items-end">
+              <p className="text-[1rem] font-medium">With Warmth,</p>
+              <p className="text-[#C95D2F] opacity-70 text-[1rem] font-medium">
+                 The Triyuginarayan Mandap Team
+              </p>
+              <p className="opacity-70 text-[1rem] font-medium">
+                 (Companion to your divine wedding journey)
+              </p>
+            </div>
+          </div>
         </div>
-        <p className='text-[2.375rem] italic font-bold lora w-[20rem]'>“From our <span className='text-[#C95D2F]'>home</span> in the <span className='text-[#C95D2F]'>hills</span> to <span className='text-[#C95D2F]'>yours”</span></p>
-        <div className='flex flex-col justify-end items-end'>
-          <p className='text-[1rem] font-medium'>With Warmth,</p>
-          <p className='text-[#C95D2F] opacity-70 text-[1rem] font-medium'> The Triyuginarayan Mandap Team</p>
-          <p className='opacity-70 text-[1rem] font-medium'> (Companion to your divine wedding journey)</p>
+        <div className="bg-[#C95D2F] w-[10rem] h-[10rem] md:w-[20rem] md:h-[20rem] rounded-full absolute bottom-0 right-24 z-0" />
+      </div>
+      <div>
+        <div className="flex justify-center items-center mt-10 md:hidden relative">
+          <Image src={message_frame} alt="image" />
+          <div className=" absolute top-40 right-10 space-y-6">
+            <div className="relative w-full ">
+              <div className="flex items-end justify-end h-10">
+                <Image src={logo} alt="image" className="w-8" />
+              </div>
+              <p className="absolute -right-[90%] text-[1.8rem] md:text-[2.375rem] italic font-bold lora w-[20rem] leading-tight">
+                “From our <span className="text-[#C95D2F]">home</span> in the{" "}
+                <span className="text-[#C95D2F]">hills</span> to{" "}
+                <span className="text-[#C95D2F]">yours”</span>
+              </p>
+
+              <p className="text-[#D29276] opacity-70 text-[0.625rem] font-bold absolute top-32 right-20 w-[10rem]">
+                 -The Triyuginarayan Mandap Team
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
-      <div className='bg-[#C95D2F] w-[20rem] h-[20rem] rounded-full absolute bottom-0 right-24 z-0'/>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ClosingNote
+export default ClosingNote;

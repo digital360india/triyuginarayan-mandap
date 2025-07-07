@@ -13,37 +13,51 @@ const Hero = () => {
     const timer = setTimeout(() => setLoaded(true), 0);
     return () => clearTimeout(timer);
   }, []);
+
   return (
-    <div className="w-full h-[600px] bg-[#C95D2F] ">
-      <div className="max-w-[1440px] w-full h-[600px] flex justify-end items-end overflow-hidden m-auto">
-        <div className="relative w-full h-[640px]">
+    <div className="w-full h-[50rem] md:h-[640px] bg-[#C95D2F] ">
+      <div className="max-w-[1440px] w-full flex flex-col md:flex-row justify-end items-end overflow-hidden m-auto">
+        <div className="relative w-full h-[50rem] md:h-[640px]">
           <div
             className={`
-    absolute top-30 left-10 w-[700px] flex flex-col gap-10 z-10
+    absolute top-10 md:top-30 left-10 w-[300px] md:w-[700px] flex flex-col gap-10 z-10
     transition-all duration-[1600ms] ease-in-out
     ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
   `}
           >
-            <h1 className="text-white text-[57px] ">
-              <span className="text-[#F6EBC1] font-bold">
+            {/* desktop */}
+            <h1 className="hidden md:block text-white text-[57px]">
+              <span className="text-[#F6EBC1] font-bold ">
                 Triyuginarayan Temple :
               </span>{" "}
               <span className="italic">Vivaah Ka Punya Sthal</span>
             </h1>
-            <p className="text-white text-[18px]">
+            <div className="space-y-6">
+            <p className="text-center md:hidden text-[1.375rem] text-[#fff] font-bold lora">
+              “ Vivaah Ka Punya Sthal ”
+            </p>
+            {/* mobile */}
+            <h1 className="text-center md:hidden text-[2.5rem] text-[#F6EBC1] font-bold lora">
+              Triyuginarayan Temple
+            </h1>
+            </div>
+            <p className="text-white text-[1rem] md:text-[18px] w-[325px] text-center md:text-start open-sans">
               Get married where Shiva and Parvati did — in the sacred Garhwal
               hills, beside the eternal fire of their divine union. A wedding
               here is not just a ritual, but a timeless blessing.
             </p>
-            <div>
+            <div className="mx-auto md:mx-0">
               <button className="bg-[#FFB52C] text-center text-[16px] font-semibold cursor-pointer px-6 py-3 rounded-[7px] flex justify-start">
                 Plan your Wedding
               </button>
             </div>
           </div>
+
+          
           <div
-            className={`absolute bottom-0 right-20  w-[500px] h-[500px] transition-transform duration-1600 ease-in-out ${loaded ? "translate-y-0" : "translate-y-full"
-              } z-20`}
+            className={`absolute bottom-0 right-15 md:right-20 h-[300px] w-[300px] md:w-[500px] md:h-[500px] transition-transform duration-1600 ease-in-out ${
+              loaded ? "translate-y-0" : "translate-y-full"
+            } z-20`}
           >
             <Image
               src={shiv_parvati}
@@ -53,8 +67,9 @@ const Hero = () => {
             />
           </div>
           <div
-            className={`absolute bottom-10 right-20 animate-spin  w-[500px] h-[500px] transition-transform duration-1600 ease-in-out ${loaded ? "translate-y-0" : "translate-y-full"
-              } z-19 spin-slow`}
+            className={`absolute bottom-10 right-15 md:right-20 animate-spin h-[300px] w-[300px] md:w-[500px] md:h-[500px] transition-transform duration-1600 ease-in-out ${
+              loaded ? "translate-y-0" : "translate-y-full"
+            } z-19 spin-slow`}
           >
             <Image
               src={mantra}
@@ -65,7 +80,7 @@ const Hero = () => {
           </div>
 
           <div
-            className={`absolute -bottom-12 right-0 w-[90vw] max-w-[1000px] h-[600px] transition-transform duration-1600 ease-in-out
+            className={`absolute -bottom-48 md:-bottom-12 -right-[350px] md:right-0 w-[1000px] h-[1000px]  md:w-[90vw] max-w-[1000px] md:h-[600px] transition-transform duration-1600 ease-in-out
              ${loaded ? "translate-x-0" : "translate-x-full"}
              `}
           >

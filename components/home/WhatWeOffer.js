@@ -55,16 +55,16 @@ const WhatWeOffer = () => {
 
   return (
     <div className="max-w-[1440px] w-full m-auto mt-25">
-      <div className="w-full m-auto text-center">
-        <p className="text-center text-[2.25rem] font-bold">
+      <div className="w-full m-auto text-center space-y-6">
+        <p className="text-center text-[1.8rem] md:text-[2.25rem] font-bold">
           What We <span className="text-[#C95D2F]">Offer</span>
         </p>
-        <p className="text-center text-lg max-w-3xl mx-auto mt-[2.19rem]">
+        <p className="md:text-center text-[1rem] md:text-lg max-w-3xl mx-auto mt-[2.19rem] px-8 md:px-0 text-justify open-sans">
           We combine traditional rituals with modern ease to help you focus only
           on love, faith, and family. Our team of Triyuginarayan weddin planners
           takes care of everything:
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-14 gap-y-16 max-w-5xl m-auto mt-[3.35rem] justify-items-center place-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-14 gap-y-14 md:gap-y-16 max-w-5xl m-auto mt-[3.35rem] justify-items-center place-items-center">
           {offers.map((offer, index) => (
             <div
               className="flex flex-col gap-5 justify-center items-center text-center w-60 p-4"
@@ -89,7 +89,7 @@ const WhatWeOffer = () => {
                 </div>
               </div>
 
-              <p className="font-bold">{offer.heading}</p>
+              <p className="font-bold ">{offer.heading}</p>
               <p>{offer.para}</p>
             </div>
           ))}

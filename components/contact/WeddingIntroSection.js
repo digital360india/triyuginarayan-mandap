@@ -4,15 +4,15 @@ import contact_us from '../../assets/images/contact-us.png'
 
 const WeddingIntroSection = () => {
   return (
-    <div className="w-full flex max-w-[1440px] gap-10 m-auto">
-        <div className="w-[40%] flex justify-center items-center">
+    <div className="w-full flex flex-col md:flex-row max-w-[1440px] gap-10 m-auto px-8 md:px-0">
+        <div className="hidden md:w-[40%] md:flex justify-center items-center">
             <Image src={contact_us} alt="image" />
         </div>
-      <div className="max-w-3xl p-3 flex flex-col gap-6">
-        <p className="text-[3.25rem] font-bold text-[#C95D2F] leading-tight lora">
-          Begin Your Forever at Triyuginarayan Temple
+      <div className="max-w-3xl p-0 md:p-3 flex flex-col gap-6">
+        <p className="text-[2.5rem] md:text-[3.25rem] font-bold  leading-tight lora">
+          Begin Your Forever at <span className="text-[#C95D2F]">Triyuginarayan Temple</span> 
         </p>
-        <p className="text-lg md:text-xl leading-relaxed open-sans">
+        <p className="text-[1rem] md:text-[1.125rem] text-justify md:text-start leading-relaxed open-sans">
           Planning a wedding at Triyuginarayan Temple is not just about dates
           and bookings — it’s about starting a new chapter with peace,
           tradition, and blessings. Whether you’re just exploring the idea or
@@ -44,7 +44,12 @@ const WeddingIntroSection = () => {
           </div>
           </div>
         </div>
+
+
       </div>
+      <div className="flex md:hidden justify-center items-center">
+            <Image src={contact_us} alt="image" className="w-[18rem]"/>
+        </div>
     </div>
   );
 };

@@ -19,13 +19,13 @@ const TriyuginarayanOverview = () => {
 
   return (
     <div className="">
-      <div className="max-w-[1440px] bg-[#C95D2F] h-[30rem] relative m-auto">
-        <div className="flex justify-center items-center h-full px-20">
-          <p className="w-[70rem] text-[3.4375rem] text-white font-bold lora z-10 leading-tight">
+      <div className="max-w-[1440px] bg-[#C95D2F] h-[45rem] md:h-[30rem] relative m-auto overflow-hidden">
+        <div className="flex flex-col md:flex-row justify-center items-center h-full px-0 md:px-20">
+          <p className="w-full md:w-[70rem] text-[2.5rem] md:text-[3.4375rem] text-white font-bold lora z-10 leading-tight p-8">
             Why Choose <span className="text-[#F6E8C1]">Triyuginarayan</span>{" "}
             for Your Wedding?
           </p>
-          <p className="w-[80rem] text-white text-[1.125rem] open-sans z-10 leading-10">
+          <p className="w-full md:w-[80rem] text-white text-[1rem] md:text-[1.125rem] open-sans z-10 leading-10 px-8 md:px-0">
             If you’re looking for a wedding that’s simple, soulful, and full of
             meaning, Triyuginarayan is one of the most special places you’ll
             ever find. This is not just a destination — it’s a place where
@@ -33,17 +33,23 @@ const TriyuginarayanOverview = () => {
             wedding at Triyuginarayan Temple for their big day:
           </p>
         </div>
-        <div className="absolute right-0 bottom-0">
-          <Image src={choose_us} alt="imge" className="h-[30rem]" />
+        <div className="absolute -left-24 -right-24 md:right-0 bottom-0 overflow-hidden">
+          <Image
+            src={choose_us}
+            alt="imge"
+            className="h-[45rem] md:h-[30rem]"
+          />
         </div>
       </div>
 
-      <div className="max-w-[1440px] m-auto flex flex-col gap-32 px-10 mt-25">
-        <div className="flex">
-          <div className="flex flex-col w-[60%] p-10">
-            <div className="flex items-center justify-center gap-3">
-              <span className="text-[6.25rem] font-semibold">1.</span>
-              <p className="text-[2.25rem] font-bold">
+      <div className="max-w-[1440px] m-auto flex flex-col gap-32 px-8 md:px-10 mt-25">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-0">
+          <div className="flex flex-col w-full md:w-[60%] p-0 md:p-10 space-y-6">
+            <div className="flex md:items-center justify-center gap-3">
+              <span className="text-[4rem] md:text-[6.25rem] font-semibold">
+                1.
+              </span>
+              <p className="text-[1.8rem] md:text-[2.25rem] font-bold">
                 The Place Where Lord Shiva{" "}
                 <span className="text-[#C95D2F]">Married</span> Parvati.
               </p>
@@ -58,22 +64,24 @@ const TriyuginarayanOverview = () => {
             </p>
           </div>
 
-          <div className="w-[40%] flex justify-center items-center">
+          <div className="w-full md:w-[40%] flex justify-center items-center">
             <Image
               src={triyuginarayan_temple}
               alt="image"
-              className="w-[20rem]"
+              className="w-[18rem] md:w-[20rem]"
             />
           </div>
         </div>
-        <div className="flex">
-          <div className="w-[40%] flex justify-center items-center">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-0">
+          <div className="hidden w-[40%] md:flex justify-center items-center">
             <Image src={mountains} alt="image" className="w-[20rem]" />
           </div>
-          <div className="flex flex-col w-[60%] p-10">
-            <div className="flex items-center justify-center gap-3">
-              <span className="text-[6.25rem] font-semibold">2.</span>
-              <p className="text-[2.25rem] font-bold">
+          <div className="flex flex-col w-full md:w-[60%] p-0 md:p-10 space-y-6">
+            <div className="flex md:items-center justify-center gap-3">
+              <span className="text-[4rem] md:text-[6.25rem] font-semibold">
+                2.
+              </span>
+              <p className="text-[1.8rem] md:text-[2.25rem] font-bold">
                 <span className="text-[#C95D2F]">Quiet</span> Mountains.{" "}
                 <span className="text-[#C95D2F]">Pure</span> Air.{" "}
                 <span className="text-[#C95D2F]">Natural </span>Blessings.
@@ -87,12 +95,17 @@ const TriyuginarayanOverview = () => {
               and blessings all around.
             </p>
           </div>
+          <div className="md:hidden w-full md:w-[40%] flex justify-center items-center">
+            <Image src={mountains} alt="image" className="w-[18rem]" />
+          </div>
         </div>
-        <div className="flex">
-          <div className="flex flex-col w-[60%] p-10">
-            <div className="flex items-center justify-center gap-3">
-              <span className="text-[6.25rem] font-semibold">3.</span>
-              <p className="text-[2.25rem] font-bold">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-0 ">
+          <div className="flex flex-col w-full md:w-[60%] p-0 md:p-10 space-y-6">
+            <div className="flex md:items-center justify-center gap-3">
+              <span className="text-[4rem] md:text-[6.25rem] font-semibold">
+                3.
+              </span>
+              <p className="text-[1.8rem] md:text-[2.25rem] font-bold">
                 <span className="text-[#C95D2F]">Real</span> Rituals.{" "}
                 <span className="text-[#C95D2F]">Deep</span> Meaning.{" "}
                 <span className="text-[#C95D2F]">Lifelong</span> Memories.
@@ -107,18 +120,24 @@ const TriyuginarayanOverview = () => {
             </p>
           </div>
 
-          <div className="w-[40%] flex justify-center items-center">
-            <Image src={rituals} alt="image" className="w-[20rem]" />
+          <div className="w-full md:w-[40%] flex justify-center items-center">
+            <Image
+              src={rituals}
+              alt="image"
+              className="w-[18rem] md:w-[20rem]"
+            />
           </div>
         </div>
-        <div className="flex">
-          <div className="w-[40%] flex justify-center items-center">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-0">
+          <div className="hidden w-[40%] md:flex justify-center items-center">
             <Image src={couple} alt="image" className="w-[20rem]" />
           </div>
-          <div className="flex flex-col w-[60%] p-10">
-            <div className="flex items-center justify-center gap-3">
-              <span className="text-[6.25rem] font-semibold">4.</span>
-              <p className="text-[2.25rem] font-bold">
+          <div className="flex flex-col w-full md:w-[60%] p-0 md:p-10 space-y-6">
+            <div className="flex md:items-center justify-center gap-3">
+              <span className="text-[4rem] md:text-[6.25rem] font-semibold">
+                4.
+              </span>
+              <p className="text-[1.8rem] md:text-[2.25rem] font-bold">
                 A Wedding for the{" "}
                 <span className="text-[#C95D2F]">Soul, Not the Show.</span>
               </p>
@@ -131,21 +150,28 @@ const TriyuginarayanOverview = () => {
               Shiva and Goddess Parvati.
             </p>
           </div>
+          <div className="w-full md:w-[40%] flex md:hidden justify-center items-center">
+            <Image src={couple} alt="image" className="w-[18rem]" />
+          </div>
         </div>
       </div>
 
-      <div className="max-w-[1440px] m-auto text-lg font-serif text-black text-center mt-25 mb-25 px-26">
-        <p className="text-[3rem] font-bold lora">
+      <div className="max-w-[1440px] m-auto font-serif text-black text-start md:text-center mt-25 mb-25 px-4 md:px-26">
+        <p className="text-[2.2rem] md:text-[3rem] font-bold lora leading-relaxed">
           “ If your
-          <Image
-            src={liked ? "/heart-filled.svg" : "/heart-outline.svg"}
-            alt="heart"
-            className={`inline-block w-22 h-22 cursor-pointer align-middle transition-transform duration-300 ease-in-out 
-    ${animate ? "scale-125 translate-x-4" : "scale-70 translate-x-0"}`}
-            width={132}
-            height={132}
-            onClick={handleClick}
-          />
+          <span className="relative inline-block">
+            <Image
+              src={liked ? "/heart-filled.svg" : "/heart-outline.svg"}
+              alt="heart"
+              className={`inline-block w-16 h-16 md:w-22 md:h-22 cursor-pointer align-middle transition-transform duration-300 ease-in-out 
+            ${
+              animate ? "scale-125 translate-x-4" : "scale-70 translate-x-0"
+            }`}
+              width={1}
+              height={1}
+              onClick={handleClick}
+            />
+          </span>
           says <span className="text-[#c8552f">Yes</span> to{" "}
           <span className="text-[#c8552f]">
             peace, tradition, and real blessings

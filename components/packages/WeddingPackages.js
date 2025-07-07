@@ -1,18 +1,19 @@
 "use client";
 import React from "react";
-import { FaCheckCircle } from "react-icons/fa";
+import Plans from "./Plans";
+import PlanSlider from "./PlanSlider";
 
 const WeddingCost = () => {
-
+  
   return (
     <div className="">
       {/* Intro */}
-      <div className="text-center px-4 py-8 max-w-3xl mx-auto">
-        <p className="text-4xl font-bold font-serif">Wedding Packages</p>
-        <p className="italic text-lg my-2">
+      <div className="text-center px-8 md:px-4 py-8 max-w-3xl mx-auto space-y-6">
+        <p className="text-[1.8rem] md:text-[2.25rem] font-bold font-serif">Wedding <span className="text-[#C95D2F]">Packages</span></p>
+        <p className=" hidden md:block italic text-lg my-2">
           &quot;Simple. Sacred. Serene.&quot;
         </p>
-        <p className="text-base text-gray-700">
+        <p className="text-justify md:text-start text-[1rem] md:text-lg">
           At Triyuginarayan Mandap, we have created wedding packages with love
           and care. Our goal is to help you plan a beautiful temple wedding that
           is full of blessings and free from stress. We keep everything simple,
@@ -20,80 +21,67 @@ const WeddingCost = () => {
         </p>
       </div>
 
-      {/* Floating Cards */}
-      {/* <div className="flex justify-center gap-4 px-4 mb-12">
-        <div className="h-[300px] w-[300px] bg-white shadow-md rounded-[0.7rem]"></div>
-        <div className="h-[300px] w-[300px] bg-white shadow-lg rounded-[0.7rem] z-10"></div>
-        <div className="h-[300px] w-[300px] bg-white shadow-md rounded-[0.7rem]"></div>
-      </div> */}
-      
-      <div className="max-w-7xl mx-auto p-6 ">
-  {/* Header */}
-  <div className="grid grid-cols-4 gap-4 mb-6 items-center">
-    <h2 className="text-3xl font-bold text-gray-800">Plans</h2>
-    <button className="bg-[#4E4E4E] text-white py-2 rounded-lg w-full">Basic</button>
-    <button className="bg-[#C95D2F] text-white py-2 rounded-lg w-full">Standard</button>
-    <button className="bg-[#A42D2B] text-white py-2 rounded-lg w-full">Premium</button>
-  </div>
+      <div className="hidden md:block relative h-[30rem] mt-25">
+        <div className="flex justify-center items-center">
+          {/* basic */}
+          <div className="z-1 w-[24rem] bg-white h-[23rem] rounded-2xl -mr-[1rem] shadow-lg flex flex-col justify-center items-center gap-4">
+            <p className="text-[1.75rem] font-bold">Basic</p>
+            <p className="text-[#656565] text-[1rem]">
+              A simple wedding plan for close family.
+            </p>
+            <p className=" text-[3.75rem] text-[#303030] font-bold">₹59,999</p>
+            <div className=" flex gap-4">
+              <p className="text-[#656565] text-[1rem]">1 Day & Night</p>
+              <p className="text-[#656565] text-[1rem]">Upto 4 people</p>
+            </div>
+            <button className="hidden lg:block bg-[#4E4E4E] text-white text-center text-[16px] font-semibold cursor-pointer px-6 py-3 rounded-[7px]">
+              See Plan
+            </button>
+          </div>
 
-  {/* Aligned Content */}
-  <div className="grid grid-cols-4 gap-4">
-    {/* Features Column */}
-    <div className="grid grid-rows-[repeat(9,minmax(0,1fr))] gap-4 text-sm font-medium text-gray-900">
-      <p>Wedding Rituals by Local Purohit</p>
-      <p>Marriage Registration Support</p>
-      <p>Stay for Guests</p>
-      <p>Guidance for Food/Meals</p>
-      <p>Help with Wedding Arrangements</p>
-      <p>Mandap Decoration</p>
-      <p>Support for Haldi/Mehndi Rituals</p>
-      <p>Optional Add-ons</p>
-      <div></div> {/* Spacer for button alignment */}
-    </div>
+          {/* standard */}
+          <div className="z-2 w-[24rem] bg-white h-[25rem] rounded-2xl shadow-xl flex flex-col justify-center items-center gap-4">
+            <p className="text-[1.75rem] font-bold text-[#C95D2F]">Standard</p>
+            <p className="text-[#656565] text-[1rem]">
+             For small and medium sized weddings
+            </p>
+            <p className=" text-[3.75rem] text-[#C95D2F] font-bold">₹1,19,999</p>
+            <div className=" flex gap-4">
+              <p className="text-[#656565] text-[1rem]">1 Day & Night</p>
+              <p className="text-[#656565] text-[1rem]">Upto 10 people</p>
+            </div>
+            <button className="hidden lg:block bg-[#C95D2F] text-white text-center text-[16px] font-semibold cursor-pointer px-6 py-3 rounded-[7px]">
+              See Plan
+            </button>
+          </div>
 
-    {/* Basic Card */}
-    <div className="grid grid-rows-[repeat(9,minmax(0,1fr))] gap-4 rounded-2xl shadow-md p-4 text-sm text-gray-800">
-      <p className="text-green-500"><FaCheckCircle className="w-32 h-8" /></p>
-      <p className="text-green-500"><FaCheckCircle className="w-32 h-8" /></p>
-      <p><span className="text-green-500"><FaCheckCircle className="w-32 h-8" /> </span><br />Bride, Groom + 3 Guests, 1 Night</p>
-      <p ><span className="text-green-500"><FaCheckCircle className="w-32 h-8" /> </span> <br />Guidance for Food/Meals</p>
-      <p className="text-green-500"><FaCheckCircle className="w-32 h-8" /></p>
-      <p className="text-gray-400"><FaCheckCircle className="w-32 h-8" /></p>
-      <p className="text-gray-400"><FaCheckCircle className="w-32 h-8" /></p>
-      <p>Garlands & basic décor <br /> Photographer <br /> Tea/snack</p>
-      <button className="w-full bg-[#4E4E4E] text-white py-2 rounded-lg self-end">Select Package</button>
-    </div>
+          {/* premium */}
+          <div className="z-1 w-[24rem] bg-white h-[23rem] rounded-2xl -ml-[1rem] shadow-md flex flex-col justify-center items-center gap-4">
+            <p className="text-[1.75rem] font-bold text-[#A42D2B]">Premium</p>
+            <p className="text-[#656565] text-[1rem]">
+             For seeking a cultural experience
+            </p>
+            <p className=" text-[3.75rem] text-[#A42D2B] font-bold">₹1,99,999</p>
+            <div className=" flex gap-4">
+              <p className="text-[#656565] text-[1rem]">1 Day & Night</p>
+              <p className="text-[#656565] text-[1rem]">Upto 12 people</p>
+            </div>
+            <button className="hidden lg:block bg-[#A42D2B] text-white text-center text-[16px] font-semibold cursor-pointer px-6 py-3 rounded-[7px]">
+              See Plan
+            </button>
+          </div>
+        </div>
+        <div className="bg-[linear-gradient(0deg,_#F6EBC1_-3.87%,_#C95D2F80_99.82%)] bg-gradient-to-b to- blur-[12.2px] filter absolute z-0 flex justify-end w-full h-[20rem] top-[40%]" />
+      </div>
 
-    {/* Standard Card */}
-    <div className="grid grid-rows-[repeat(9,minmax(0,1fr))] gap-4 rounded-2xl shadow-md p-4 bg-gradient-to-b from-[#FF4C0026] to-[#ffb99b80] text-sm text-gray-800">
-      <p className=""><span className="text-green-500"><FaCheckCircle className="w-32 h-8" /> </span> (with assistant)</p>
-      <p className="text-green-500"><FaCheckCircle className="w-32 h-8" /></p>
-      <p ><span className="text-green-500"><FaCheckCircle className="w-32 h-8" /> </span> <br />Up to 10 Guests, 1 Night</p>
-      <p> <span className="text-green-500"><FaCheckCircle className="w-32 h-8" /> </span> <br />Wedding bhoj – satvik meals</p>
-      <p className="text-green-500"><FaCheckCircle className="w-32 h-8" /></p>
-      <p ><span className="text-green-500"><FaCheckCircle className="w-32 h-8" /> </span><br /> Flowers & cloth</p>
-      <p className="text-green-500"><FaCheckCircle className="w-32 h-8" /></p>
-      <p>Dhol/music <br /> Rangoli/diya <br /> Local gifts</p>
-      <button className="w-full bg-[#C95D2F] text-white py-2 rounded-lg self-end">Select Package</button>
-    </div>
+      {/* moble plan */}
+      <div className="md:hidden flex">
+        <PlanSlider/>
+      </div>
 
-    {/* Premium Card */}
-    <div className="grid grid-rows-[repeat(9,minmax(0,1fr))] gap-4 rounded-2xl shadow-md p-4 bg-gradient-to-b from-[#ff040019] to-[#FF706E80] text-sm text-gray-800">
-      <p ><span className="text-green-500"><FaCheckCircle className="w-32 h-8" /> </span> (Customise)</p>
-      <p><span className="text-green-500"><FaCheckCircle className="w-32 h-8" /> </span> <br />(Full Legal Support)</p>
-      <p ><span className="text-green-500"><FaCheckCircle className="w-32 h-8" /> </span> <br />Up to 12 Guests, 1 Night</p>
-      <p><span className="text-green-500"><FaCheckCircle className="w-32 h-8" /> </span> <br />Traditional meals</p>
-      <p className="text-green-500"><FaCheckCircle className="w-32 h-8" /></p>
-      <p><span className="text-green-500"><FaCheckCircle className="w-32 h-8" /> </span> Full floral & mandap décor</p>
-      <p ><span className="text-green-500"><FaCheckCircle className="w-32 h-8" /> </span>(Haldi, mangal geet, aarti, dhol)</p>
-      <p>Floral bride entry <br /> Reels/photoshoot <br /> Traditional attire shoot</p>
-      <button className="w-full bg-[#A42D2B] text-white py-2 rounded-lg self-end">Select Package</button>
-    </div>
-  </div>
-</div>
-
-
-
+      <div className="hidden md:block mt-25 mb-25">
+        <Plans />
+      </div>
     </div>
   );
 };
