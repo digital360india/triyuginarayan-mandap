@@ -2,7 +2,7 @@ import React from "react";
 
 const OurMission = () => {
   return (
-    <div className="max-w-[1440px] w-full md:w-[90%] m-auto px-8 md:px-10 md:p-10 mt-25 space-y-6">
+    <div className="max-w-[1440px] w-full m-auto px-8  md:px-16 mt-25 space-y-6">
       <p className="text-[1.8rem] md:text-[2.25rem] font-bold text-center">
         Our Mission is&nbsp;
         <span className="text-[#C95D2F]">Simple</span>

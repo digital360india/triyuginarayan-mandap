@@ -4,11 +4,11 @@ import star_gif from "../../assets/images/star-gif.gif";
 
 const NotPlanners = () => {
   return (
-    <div className="max-w-[1440px] m-auto mt-25 flex flex-col md:flex-row items-center gap-6 md:gap-10 px-5 md:px-10">
+    <div className="max-w-[1440px] m-auto mt-25 flex flex-col md:flex-row items-center gap-6 md:gap-16 px-5 md:px-16">
       <span className="block md:hidden w-[3.75rem] h-[3.75rem] bg-[#C95D2F] rounded-full">
           <Image src={star_gif} alt="gif" className="w-full h-full object-contain" />
         </span>
-      <div className="flex flex-wrap justify-center items-center text-[2.5rem] md:text-[3.75rem] font-bold leading-tight w-full md:w-[600px]">
+      <div className="flex flex-wrap justify-center items-center text-[2.5rem] md:text-[3.75rem] font-bold leading-tight w-full md:w-[600px] text-start">
         Not&nbsp;
         <span className="text-[#C95D2F]">Planners.</span>&nbsp;Facilitators of&nbsp;
         <span className="text-[#C95D2F]">Blessings.</span>&nbsp;

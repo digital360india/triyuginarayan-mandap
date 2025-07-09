@@ -19,7 +19,8 @@ const TriyuginarayanOverview = () => {
 
   return (
     <div className="">
-      <div className="max-w-[1440px] bg-[#C95D2F] h-[45rem] md:h-[30rem] relative m-auto overflow-hidden">
+      <div className="w-full  bg-[#C95D2F]">
+      <div className="max-w-[1440px] h-[45rem] md:h-[30rem] relative m-auto overflow-hidden">
         <div className="flex flex-col md:flex-row justify-center items-center h-full px-0 md:px-20">
           <p className="w-full md:w-[70rem] text-[2.5rem] md:text-[3.4375rem] text-white font-bold lora z-10 leading-tight p-8">
             Why Choose <span className="text-[#F6E8C1]">Triyuginarayan</span>{" "}
@@ -40,6 +41,7 @@ const TriyuginarayanOverview = () => {
             className="h-[45rem] md:h-[30rem]"
           />
         </div>
+      </div>
       </div>
 
       <div className="max-w-[1440px] m-auto flex flex-col gap-32 px-8 md:px-10 mt-25">
