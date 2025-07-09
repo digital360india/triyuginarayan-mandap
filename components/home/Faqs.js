@@ -29,7 +29,7 @@ const Faqs = () => {
             </div>
             <div
               id={`faq-content-${index}`}
-              className={`transition-all duration-700 ease-in-out overflow-hidden ${
+              className={`transition-all duration-300 ease-in-out overflow-hidden ${
                 isOpen === index ? "max-h-[500px] opacity-100 mt-2" : "max-h-0 opacity-0"
               }`}
             >

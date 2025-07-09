@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="relative w-full h-[50rem] md:h-[640px]">
           <div
             className={`
-    absolute top-10 md:top-30 left-10 w-[300px] md:w-[700px] flex flex-col gap-10 z-10
+    absolute top-10 md:top-30 left-10 w-[300px] md:w-[700px] flex flex-col gap-10 md:gap-8 z-10
     transition-all duration-[1600ms] ease-in-out
     ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
   `}
@@ -41,7 +41,7 @@ const Hero = () => {
               Triyuginarayan Temple
             </h1>
             </div>
-            <p className="text-white text-[1rem] md:text-[18px] w-[325px] text-center md:text-start open-sans">
+            <p className="text-white text-[1rem] md:text-[18px] w-[325px] md:w-full text-center md:text-start open-sans">
               Get married where Shiva and Parvati did — in the sacred Garhwal
               hills, beside the eternal fire of their divine union. A wedding
               here is not just a ritual, but a timeless blessing.

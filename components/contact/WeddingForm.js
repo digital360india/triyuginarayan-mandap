@@ -6,7 +6,7 @@ import arrow from "../../assets/images/arrow.png";
 
 const WeddingForm = () => {
   return (
-    <div className="flex flex-col md:flex-row px-8 md:px-10 mb-25 mt-25">
+    <div className="flex flex-col md:flex-row px-8 md:px-10 mb-25 mt-25 max-w-[1440px] w-full m-auto">
       <div className="w-full md:w-[50%] p-0 md:p-10 space-y-9">
         <div className="w-full hidden md:flex justify-end">
         <Image src={arrow} alt="image" />
@@ -36,7 +36,7 @@ const WeddingForm = () => {
       <div className="w-full md:w-[50%] mt-5">
         <form
           action=""
-          className="bg-[#FBF9F9] w-[20rem] md:w-[39.125rem] h-[67rem] md:h-[60rem] m-auto flex flex-col justify-center gap-10 p-5 rounded-[1rem] shadow-[0px 0px 38px 0px rgba(0, 0, 0, 0.18)]"
+          className="bg-[#FBF9F9] w-[300px] md:w-[39.125rem] h-[67rem] md:h-[60rem] m-auto flex flex-col justify-center gap-10 p-5 rounded-[1rem] shadow-[0px 0px 38px 0px rgba(0, 0, 0, 0.18)]"
         >
           <div className="flex flex-col gap-4 mx-auto">
             <label htmlFor="" className="font-semibold">

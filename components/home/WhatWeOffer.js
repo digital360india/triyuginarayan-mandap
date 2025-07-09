@@ -54,43 +54,46 @@ const WhatWeOffer = () => {
   ];
 
   return (
-    <div className="max-w-[1440px] w-full m-auto mt-25">
-      <div className="w-full m-auto text-center space-y-6">
+    <div className="w-full flex justify-center mt-[6rem] md:mt-[8rem] px-4">
+      <div className="w-full max-w-[1440px] flex flex-col items-center">
         <p className="text-center text-[1.8rem] md:text-[2.25rem] font-bold">
           What We <span className="text-[#C95D2F]">Offer</span>
         </p>
-        <p className="md:text-center text-[1rem] md:text-lg max-w-3xl mx-auto mt-[2.19rem] px-8 md:px-0 text-justify open-sans">
+
+        <p className="text-[1rem] md:text-lg max-w-[900px] text-justify md:text-center mt-[2rem] px-4 md:px-10 leading-loose open-sans">
           We combine traditional rituals with modern ease to help you focus only
-          on love, faith, and family. Our team of Triyuginarayan weddin planners
+          on love, faith, and family. Our team of Triyuginarayan wedding planners
           takes care of everything:
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-14 gap-y-14 md:gap-y-16 max-w-5xl m-auto mt-[3.35rem] justify-items-center place-items-center">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12 mt-[3.5rem] w-[90%] md:w-[85%] lg:w-[80%]">
           {offers.map((offer, index) => (
             <div
-              className="flex flex-col gap-5 justify-center items-center text-center w-60 p-4"
+              className="flex flex-col gap-5 justify-center items-center text-center w-full max-w-[260px] m-auto p-2"
               key={index}
             >
-              <div className="flip-container w-40 h-40">
+              <div className="flip-container w-[160px] h-[160px]">
                 <div className="flip-inner">
                   <div className="flip-front">
                     <Image
                       src={offer.img}
-                      alt="Heads"
+                      alt={offer.heading}
                       className="w-full h-full rounded-full"
                     />
                   </div>
                   <div className="flip-back">
                     <Image
                       src={offer.img1}
-                      alt="Tails"
+                      alt={offer.heading}
                       className="w-full h-full rounded-full"
                     />
                   </div>
                 </div>
               </div>
-
-              <p className="font-bold ">{offer.heading}</p>
-              <p>{offer.para}</p>
+              <div className="flex flex-col gap-2 px-2">
+                <p className="font-bold text-[1.1rem]">{offer.heading}</p>
+                <p className="text-[0.95rem] text-[#555] leading-[1.5rem]">{offer.para}</p>
+              </div>
             </div>
           ))}
         </div>

@@ -6,7 +6,7 @@ import WhatWeOffer from "@/components/home/WhatWeOffer";
 
 export default function Home() {
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full">
     <Hero/>
     <WhatWeOffer/>
     <HowWeWork/>

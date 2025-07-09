@@ -41,15 +41,15 @@ const ContactInfoSection = () => {
             <Image src={email} alt="image" />
             <div className="text-start">
               <p className="font-bold">Email us</p>
-              <p>contact@triyuginarayanmandap.in</p>
+              <p className="">contact@triyuginarayanmandap.in</p>
             </div>
           </div>
         </div>
 
         <div className="mt-6 flex items-center justify-center gap-5">
-          <div className="w-[300px] h-[1px] bg-black " />
+          <div className="w-[150px] md:w-[300px] h-[1px] bg-black " />
           <div className="font-bold">OR</div>
-          <div className="w-[300px] h-[1px] bg-black " />
+          <div className="w-[150px] md:w-[300px] h-[1px] bg-black " />
         </div>
 
         <div className="w-full mx-auto flex flex-col gap-8 mt-10 text-[1rem] md:text-lg open-sans px-8 md:px-0">

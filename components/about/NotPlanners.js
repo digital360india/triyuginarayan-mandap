@@ -8,9 +8,9 @@ const NotPlanners = () => {
       <span className="block md:hidden w-[3.75rem] h-[3.75rem] bg-[#C95D2F] rounded-full">
           <Image src={star_gif} alt="gif" className="w-full h-full object-contain" />
         </span>
-      <div className="flex flex-wrap justify-center items-center text-[2.5rem] md:text-[3.75rem] font-bold leading-tight w-full md:w-[600px] text-start">
+      <div className="flex flex-wrap justify-start items-center text-[2.5rem] md:text-[3.75rem] font-bold leading-tight w-full md:w-[600px] text-start">
         Not&nbsp;
-        <span className="text-[#C95D2F]">Planners.</span>&nbsp;Facilitators of&nbsp;
+        <span className="text-[#C95D2F]">Planners.</span>Facilitators of&nbsp;
         <span className="text-[#C95D2F]">Blessings.</span>&nbsp;
         <span className="hidden md:inline-block w-[3.75rem] h-[3.75rem] bg-[#C95D2F] rounded-full">
           <Image src={star_gif} alt="gif" className="w-full h-full object-contain" />
