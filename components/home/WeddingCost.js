@@ -53,13 +53,13 @@ const WeddingCost = () => {
               />
             </div>
             <div
-              className={`absolute top-[20px] animate-spin w-[300px] h-[300px] md:w-[500px] md:h-[500px] transition-transform duration-1600 ease-in-out z-19 spin-slow`}
+              className={`absolute top-[20px] animate-spin w-[300px] h-[300px] md:w-[500px] md:h-[500px] transition-transform duration-1600 ease-in-out z-19 spin-slow overflow-hidden`}
             >
               <Image
                 src={mantra}
                 alt="image"
                 fill
-                className="object-contain w-[100px]"
+                className="object-contain w-[90px]"
               />
             </div>
           </div>

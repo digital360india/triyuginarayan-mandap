@@ -33,7 +33,7 @@ const TriyuginarayanOverview = () => {
             wedding at Triyuginarayan Temple for their big day:
           </p>
         </div>
-        <div className="absolute -left-24 -right-24 md:right-0 bottom-0 overflow-hidden">
+        <div className="absolute sm:-left-24 md:left-auto -right-24 md:!right-0 bottom-0 overflow-hidden">
           <Image
             src={choose_us}
             alt="imge"

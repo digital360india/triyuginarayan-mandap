@@ -11,6 +11,7 @@ import { IoPeople } from "react-icons/io5";
 import { TbPackages } from "react-icons/tb";
 import { FaHandPointUp } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
+import { Icon } from '@iconify/react';
 
 
 const Navbar = () => {
@@ -24,8 +25,8 @@ const Navbar = () => {
   const links = useMemo(() => [
   { name: "Home", href: "/", icon: <TiHome className="text-[1.5rem]" /> },
   { name: "About us", href: "/about", icon: <IoPeople className="text-[1.5rem]" /> },
-  { name: "Packages", href: "/packages", icon: <TbPackages className="text-[1.5rem]" /> },
-  { name: "Why Choose Us", href: "/why-choose-us", icon: <FaHandPointUp className="text-[1.5rem]" /> },
+  { name: "Packages", href: "/packages", icon: <Icon icon="ix:package-filled" width="24" height="24" /> },
+  { name: "Why Choose Us", href: "/why-choose-us", icon: <Icon icon="mingcute:hand-finger-fill" width="24" height="24" /> },
   { name: "Contact Us", href: "/contact-us", icon: <IoCall className="text-[1.5rem]" /> },
 ], []);
 
@@ -159,7 +160,7 @@ const Navbar = () => {
                           setIsOpen(false);
                         }}
                       >
-                        <p className="flex items-center gap-2 text-[18px]">
+                        <p className="flex items-center gap-4 text-[18px]">
                         <span>{link.icon}</span>{link.name}
                         </p>
                       </Link>

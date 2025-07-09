@@ -32,7 +32,7 @@ const Hero = () => {
               </span>{" "}
               <span className="italic">Vivaah Ka Punya Sthal</span>
             </h1>
-            <div className="space-y-6">
+            <div className="space-y-5">
             <p className="text-center md:hidden text-[1.375rem] text-[#fff] font-bold lora">
               “ Vivaah Ka Punya Sthal ”
             </p>

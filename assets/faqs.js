@@ -2,7 +2,7 @@ export const Faq = [
   {
     question: "How do I book a wedding at Triyuginarayan Temple?",
     answer:
-      " Simply contact us with your preferred date. We’ll guide you step-by-step, from rituals to stay and legal papers.",
+      "Simply contact us with your preferred date. We’ll guide you step-by-step, from rituals to stay and legal papers.",
   },
   {
     question: "Can I customize my wedding package?",
@@ -10,9 +10,9 @@ export const Faq = [
       "Yes. You can choose your guest count, rituals, décor, meals, and stay. We’ll create a plan that fits your budget.",
   },
   {
-    question: "s the temple open for weddings year-round?",
+    question: "Is the temple open for weddings year-round?",
     answer:
-      " Yes, weddings take place throughout the year, except during extreme weather. We’ll advise the best time based on your plans.",
+      "Yes, weddings take place throughout the year, except during extreme weather. We’ll advise the best time based on your plans.",
   },
   {
     question: "Is the marriage legally valid?",
@@ -21,7 +21,7 @@ export const Faq = [
   },
   {
     question: "Do you offer stay and food arrangements?",
-    answer: " Yes. All packages include stay and pure satvik meals. You can choose basic or premium options based on your needs.",
+    answer: "Yes. All packages include stay and pure satvik meals. You can choose basic or premium options based on your needs.",
   },
   {
     question: "What is special about getting married at Triyuginarayan?",

@@ -24,7 +24,7 @@ const Faqs = () => {
               aria-expanded={isOpen === index}
               aria-controls={`faq-content-${index}`}
             >
-              <p className="font-semibold">{faq.question}</p>
+                <p className="font-semibold text-[15px] md:text-[1rem]">{faq.question}</p>
               <span className="text-[1.2rem]">{isOpen === index ? <FaMinus /> : <FaPlus/>}</span>
             </div>
             <div
@@ -33,7 +33,7 @@ const Faqs = () => {
                 isOpen === index ? "max-h-[500px] opacity-100 mt-2" : "max-h-0 opacity-0"
               }`}
             >
-              <p className="text-gray-700">{faq.answer}</p>
+              <p className="text-gray-700 text-[15px] md:text-[1rem]">{faq.answer}</p>
             </div>
           </div>
         ))}
