@@ -9,11 +9,11 @@ const WeddingCost = () => {
     <div className="">
       {/* Intro */}
       <div className="text-center px-8 md:px-4 py-8 max-w-3xl mx-auto space-y-6">
-        <p className="text-[1.8rem] md:text-[2.25rem] font-bold font-serif">Wedding <span className="text-[#C95D2F]">Packages</span></p>
+        <p className="text-[1.8rem] md:text-[2.25rem] font-bold lora">Wedding <span className="text-[#C95D2F]">Packages</span></p>
         <p className=" hidden md:block italic text-[3.25rem] font-bold my-2">
           “<span className="text-[#C95D2F]">Simple.</span> Sacred. <span className="text-[#C95D2F]">Serene.</span>”
         </p>
-        <p className="text-justify md:text-center text-[1rem] md:text-lg">
+        <p className="text-justify md:text-center text-[1rem] md:text-lg open-sans">
           At Triyuginarayan Mandap, we have created wedding packages with love
           and care. Our goal is to help you plan a beautiful temple wedding that
           is full of blessings and free from stress. We keep everything simple,
@@ -24,7 +24,7 @@ const WeddingCost = () => {
       <div className="hidden md:block relative h-[30rem] mt-25">
         <div className="flex justify-center items-center">
           {/* basic */}
-          <div className="z-1 w-[24rem] bg-white h-[23rem] rounded-2xl -mr-[1rem] shadow-lg flex flex-col justify-center items-center gap-4">
+          <div className="z-1 w-[24rem] bg-white h-[23rem] rounded-2xl -mr-[1rem] shadow-lg flex flex-col justify-center items-center gap-4 open-sans">
             <p className="text-[1.75rem] font-bold">Basic</p>
             <p className="text-[#656565] text-[1rem]">
               A simple wedding plan for close family.
@@ -40,7 +40,7 @@ const WeddingCost = () => {
           </div>
 
           {/* standard */}
-          <div className="z-2 w-[24rem] bg-white h-[25rem] rounded-2xl shadow-xl flex flex-col justify-center items-center gap-4">
+          <div className="z-2 w-[24rem] bg-white h-[25rem] rounded-2xl shadow-xl flex flex-col justify-center items-center gap-4 open-sans">
             <p className="text-[1.75rem] font-bold text-[#C95D2F]">Standard</p>
             <p className="text-[#656565] text-[1rem]">
              For small and medium sized weddings
@@ -56,7 +56,7 @@ const WeddingCost = () => {
           </div>
 
           {/* premium */}
-          <div className="z-1 w-[24rem] bg-white h-[23rem] rounded-2xl -ml-[1rem] shadow-md flex flex-col justify-center items-center gap-4">
+          <div className="z-1 w-[24rem] bg-white h-[23rem] rounded-2xl -ml-[1rem] shadow-md flex flex-col justify-center items-center gap-4 open-sans">
             <p className="text-[1.75rem] font-bold text-[#A42D2B]">Premium</p>
             <p className="text-[#656565] text-[1rem]">
              For seeking a cultural experience

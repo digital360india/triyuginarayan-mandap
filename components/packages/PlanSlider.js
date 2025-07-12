@@ -56,14 +56,14 @@ const plans = [
 ];
 
 const PlanCard = ({ title, subtitle, price, features, bg_color,color }) => (
-  <div className="snap-center shrink-0 w-[90%] sm:w-[350px] bg-white rounded-[1.3rem] border-1 border-[#C95D2F] shadow-[0px_4px_31.8px_0px] shadow-[#c95d2f57] p-6 m-4 h-[46rem] space-y-6">
-    <p className={`text-center text-[1.75rem] font-bold ${color}`}>{title}</p>
-    <p className="text-center text-[1rem] text-gray-600">{subtitle}</p>
-    <p className={`text-center text-[3.125rem] font-bold ${color}`}>{price}</p>
+  <div className="snap-center shrink-0 w-[85%] sm:w-[350px] bg-white rounded-[1.3rem] border-1 border-[#C95D2F] shadow-[0px_4px_31.8px_0px] shadow-[#c95d2f57] p-6 m-4 h-[46rem] space-y-6">
+    <p className={`text-center text-[1.75rem] font-bold ${color} open-sans`}>{title}</p>
+    <p className="text-center text-[1rem] text-gray-600 open-sans">{subtitle}</p>
+    <p className={`text-center text-[3.125rem] font-bold open-sans ${color}`}>{price}</p>
     <div className="bg-[#FFF9F2] p-4 rounded-md border border-[#333] h-[21rem] overflow-y-auto">
       <ul className="space-y-4 py-[1rem] px-[1rem]">
         {features.map((item, i) => (
-          <li key={i} className="flex items-start gap-2 text-sm">
+          <li key={i} className="flex items-start gap-2 text-sm open-sans">
             <span className="w-[1.3rem] h-[1.3rem] ">
             <FaCheckCircle className="text-green-500 mt-1" />
             </span>
@@ -72,7 +72,7 @@ const PlanCard = ({ title, subtitle, price, features, bg_color,color }) => (
         ))}
       </ul>
     </div>
-    <button className={`${bg_color} text-white w-full mt-10 py-2 rounded-lg hover:bg-orange-600`}>
+    <button className={`${bg_color} text-white w-full mt-10 py-2 rounded-lg hover:bg-orange-600 open-sans`}>
       See Plans
     </button>
   </div>
@@ -100,7 +100,7 @@ const PlanSlider = () => {
       {/* Slider */}
       <div
         ref={scrollRef}
-        className="flex snap-x snap-mandatory overflow-x-scroll px-4 pb-6 scroll-smooth scrollbar-hide"
+        className="flex snap-x snap-mandatory overflow-x-scroll px-2 pb-6 scroll-smooth scrollbar-hide"
       >
         {plans.map((plan, i) => (
           <PlanCard key={i} {...plan} />

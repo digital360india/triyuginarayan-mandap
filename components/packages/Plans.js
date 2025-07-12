@@ -126,11 +126,11 @@ export default function Plans() {
     <div className="max-w-6xl mx-auto p-6 relative">
       {/* Plan Buttons */}
       <div className="grid grid-cols-[1fr_repeat(3,minmax(0,1fr))] gap-4 mb-6 items-center sticky top-[100px] bg-[#F6EBC1]">
-        <p className="text-3xl font-bold text-gray-800">Plans</p>
+        <p className="text-3xl font-bold text-gray-800 open-sans">Plans</p>
         {plans.map((plan, i) => (
           <button
             key={`btn-${i}`}
-            className="text-white py-3 rounded-lg w-[232px] mx-auto"
+            className="text-white py-3 rounded-lg w-[232px] mx-auto open-sans"
             style={{ backgroundColor: plan.color }}
           >
             {plan.name}
@@ -142,7 +142,7 @@ export default function Plans() {
       <div className="grid grid-cols-[1fr_repeat(3,minmax(0,1fr))] gap-5">
         <div className="grid grid-rows-9 gap-4 text-lg font-medium text-gray-900">
           {features.map((feature, i) => (
-            <p key={`feature-${i}`} className="flex items-center">
+            <p key={`feature-${i}`} className="flex items-center open-sans">
               {feature}
             </p>
           ))}
@@ -160,7 +160,7 @@ export default function Plans() {
               <div key={`feature-${i}-${j}`} className="h-20">{content}</div>
             ))}
             <button
-              className="w-full text-white py-2 rounded-lg self-end mt-2"
+              className="w-full text-white py-2 rounded-lg self-end mt-2 open-sans"
               style={{ backgroundColor: plan.color }}
             >
               Select Package

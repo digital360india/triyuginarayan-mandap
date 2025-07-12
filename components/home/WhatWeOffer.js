@@ -56,7 +56,7 @@ const WhatWeOffer = () => {
   return (
     <div className="w-full flex justify-center mt-[6rem] md:mt-[8rem] px-4">
       <div className="w-full max-w-[1440px] flex flex-col items-center">
-        <p className="text-center text-[1.8rem] md:text-[2.25rem] font-bold">
+        <p className="text-center text-[1.8rem] md:text-[2.25rem] font-bold lora">
           What We <span className="text-[#C95D2F]">Offer</span>
         </p>
 
@@ -91,8 +91,8 @@ const WhatWeOffer = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-2 px-2">
-                <p className="font-bold text-[1.1rem]">{offer.heading}</p>
-                <p className="text-[0.95rem] text-[#555] leading-[1.5rem]">{offer.para}</p>
+                <p className="font-bold text-[1.1rem] open-sans">{offer.heading}</p>
+                <p className="text-[0.95rem] text-[#555] leading-[1.5rem] open-sans">{offer.para}</p>
               </div>
             </div>
           ))}

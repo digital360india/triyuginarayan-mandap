@@ -32,33 +32,33 @@ const ContactInfoSection = () => {
         <div className="flex flex-col md:flex-row justify-center items-start md:items-center gap-10 mt-10 px-8 md:px-0">
           <div className="flex gap-6 text-[1rem] md:text-lg">
             <Image src={whatsapp} alt="image" />
-            <div className="text-start">
+            <div className="text-start open-sans">
               <p className="font-bold">Contact us</p>
               <p>+91-9023577149</p>
             </div>
           </div>
           <div className="flex gap-6 text-[1rem] md:text-lg">
             <Image src={email} alt="image" />
-            <div className="text-start">
+            <div className="text-start open-sans">
               <p className="font-bold">Email us</p>
-              <p className="">contact@triyuginarayanmandap.in</p>
+            <p className="break-all">contact@triyuginarayanmandap.in</p>
             </div>
           </div>
         </div>
 
         <div className="mt-6 flex items-center justify-center gap-5">
-          <div className="w-[150px] md:w-[300px] h-[1px] bg-black " />
-          <div className="font-bold">OR</div>
-          <div className="w-[150px] md:w-[300px] h-[1px] bg-black " />
+          <div className="w-[120px] md:w-[300px] h-[1px] bg-black " />
+          <div className="font-bold open-sans">OR</div>
+          <div className="w-[120px] md:w-[300px] h-[1px] bg-black " />
         </div>
 
         <div className="w-full mx-auto flex flex-col gap-8 mt-10 text-[1rem] md:text-lg open-sans px-8 md:px-0">
-          <p>
+          <p className="open-sans">
             You can also fill out the form below and we’ll get back to you as
             soon as possible.
           </p>
           <div className="mx-auto">
-            <button className="bg-[#C95D2F] text-center text-[16px] text-white font-semibold cursor-pointer px-6 py-3 rounded-[7px] flex justify-start">
+            <button className="bg-[#C95D2F] text-center text-[16px] text-white font-semibold cursor-pointer px-6 py-3 rounded-[7px] flex justify-start open-sans">
               Book your wedding
             </button>
           </div>

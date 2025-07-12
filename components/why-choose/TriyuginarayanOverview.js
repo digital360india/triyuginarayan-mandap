@@ -20,13 +20,13 @@ const TriyuginarayanOverview = () => {
   return (
     <div className="">
       <div className="w-full  bg-[#C95D2F]">
-      <div className="max-w-[1440px] h-[45rem] md:h-[30rem] relative m-auto overflow-hidden">
-        <div className="flex flex-col md:flex-row justify-center items-center h-full px-0 md:px-20">
-          <p className="w-full md:w-[70rem] text-[2.5rem] md:text-[3.4375rem] text-white font-bold lora z-10 leading-tight p-8">
+      <div className="max-w-[1440px] h-[45rem] md:h-[40rem] lg:h-[30rem] relative m-auto overflow-hidden">
+        <div className="flex flex-col lg:flex-row justify-center items-center h-full px-0 md:px-20">
+          <p className="w-full lg:w-[70rem] text-[2.5rem] lg:text-[3.4375rem] text-white font-bold lora z-10 leading-tight p-8 md:text-center lg:text-start">
             Why Choose <span className="text-[#F6E8C1]">Triyuginarayan</span>{" "}
             for Your Wedding?
           </p>
-          <p className="w-full md:w-[80rem] text-white text-[1rem] md:text-[1.125rem] open-sans z-10 leading-10 px-8 md:px-0">
+          <p className="w-full lg:w-[80rem] text-white text-[1rem] lg:text-[1.125rem] open-sans z-10 leading-10 px-8 lg:px-0 md:text-center lg:text-start">
             If you’re looking for a wedding that’s simple, soulful, and full of
             meaning, Triyuginarayan is one of the most special places you’ll
             ever find. This is not just a destination — it’s a place where
@@ -34,11 +34,11 @@ const TriyuginarayanOverview = () => {
             wedding at Triyuginarayan Temple for their big day:
           </p>
         </div>
-        <div className="absolute sm:-left-24 md:left-auto -right-24 md:!right-0 bottom-0 overflow-hidden">
+        <div className="absolute sm:-left-24 md:left-auto -right-24 lg:!right-0 bottom-0">
           <Image
             src={choose_us}
             alt="imge"
-            className="h-[45rem] md:h-[30rem]"
+            className="h-[45rem] lg:h-[30rem]"
           />
         </div>
       </div>
@@ -48,15 +48,15 @@ const TriyuginarayanOverview = () => {
         <div className="flex flex-col md:flex-row gap-10 md:gap-0">
           <div className="flex flex-col w-full md:w-[60%] p-0 md:p-10 space-y-6">
             <div className="flex md:items-center justify-center gap-3">
-              <span className="text-[4rem] md:text-[6.25rem] font-semibold">
+              <span className="text-[4rem] md:text-[6.25rem] font-semibold lora">
                 1.
               </span>
-              <p className="text-[1.8rem] md:text-[2.25rem] font-bold">
+              <p className="text-[1.8rem] md:text-[2.25rem] font-bold lora">
                 The Place Where Lord Shiva{" "}
                 <span className="text-[#C95D2F]">Married</span> Parvati.
               </p>
             </div>
-            <p>
+            <p className="open-sans">
               Triyuginarayan is the same place where Lord Shiva and Goddess
               Parvati got married.The fire from their wedding — the Akhand Dhuni
               — still burns inside the temple. Couples from all over India come
@@ -79,7 +79,7 @@ const TriyuginarayanOverview = () => {
             <Image src={mountains} alt="image" className="w-[20rem]" />
           </div>
           <div className="flex flex-col w-full md:w-[60%] p-0 md:p-10 space-y-6">
-            <div className="flex md:items-center justify-center gap-3">
+            <div className="flex md:items-center justify-center gap-3 lora">
               <span className="text-[4rem] md:text-[6.25rem] font-semibold">
                 2.
               </span>
@@ -89,7 +89,7 @@ const TriyuginarayanOverview = () => {
                 <span className="text-[#C95D2F]">Natural </span>Blessings.
               </p>
             </div>
-            <p>
+            <p className="open-sans">
               This is not a crowded city wedding. Triyuginarayan is a peaceful
               village in the Himalayas, surrounded by nature. The air is fresh,
               the views are beautiful, and the atmosphere is calm. It’s the
@@ -103,7 +103,7 @@ const TriyuginarayanOverview = () => {
         </div>
         <div className="flex flex-col md:flex-row gap-10 md:gap-0 ">
           <div className="flex flex-col w-full md:w-[60%] p-0 md:p-10 space-y-6">
-            <div className="flex md:items-center justify-center gap-3">
+            <div className="flex md:items-center justify-center gap-3 lora">
               <span className="text-[4rem] md:text-[6.25rem] font-semibold">
                 3.
               </span>
@@ -113,7 +113,7 @@ const TriyuginarayanOverview = () => {
                 <span className="text-[#C95D2F]">Lifelong</span> Memories.
               </p>
             </div>
-            <p>
+            <p className="open-sans">
               Weddings here are not rushed. You sit near the eternal fire,
               guided by local priests.Mantras are chanted with care, and the
               whole ceremony feels real — not just for photos, but for life.
@@ -135,7 +135,7 @@ const TriyuginarayanOverview = () => {
             <Image src={couple} alt="image" className="w-[20rem]" />
           </div>
           <div className="flex flex-col w-full md:w-[60%] p-0 md:p-10 space-y-6">
-            <div className="flex md:items-center justify-center gap-3">
+            <div className="flex md:items-center justify-center gap-3 lora">
               <span className="text-[4rem] md:text-[6.25rem] font-semibold">
                 4.
               </span>
@@ -144,7 +144,7 @@ const TriyuginarayanOverview = () => {
                 <span className="text-[#C95D2F]">Soul, Not the Show.</span>
               </p>
             </div>
-            <p>
+            <p className="open-sans">
               Many couples today don’t want a big show, they want a wedding that
               feels true that’s why Triyuginarayan is becoming one of the most
               loved sacred Indian wedding destinations. No loud music, no stress

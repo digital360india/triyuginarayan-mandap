@@ -4,12 +4,12 @@ import contact_us from '../../assets/images/contact-us.png'
 
 const WeddingIntroSection = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row max-w-[1440px] gap-10 m-auto px-8 md:px-0">
-        <div className="hidden md:w-[40%] md:flex justify-center items-center">
+    <div className="w-full flex flex-col xl:flex-row max-w-[1440px] gap-10 m-auto px-8 md:px-0">
+        <div className="hidden xl:w-[40%] xl:flex justify-center items-center">
             <Image src={contact_us} alt="image" />
         </div>
-      <div className="max-w-3xl p-0 md:p-3 flex flex-col gap-6">
-        <p className="text-[2.5rem] md:text-[3.25rem] font-bold  leading-tight lora">
+      <div className="xl:max-w-3xl p-0 md:p-5 md:px-10 flex flex-col gap-6">
+        <p className="text-[2.5rem] md:text-[3.25rem] font-bold leading-tight lora">
           Begin Your Forever at <span className="text-[#C95D2F]">Triyuginarayan Temple</span> 
         </p>
         <p className="text-[1rem] md:text-[1.125rem] text-justify md:text-start leading-relaxed open-sans">
@@ -22,23 +22,23 @@ const WeddingIntroSection = () => {
         <div className="space-y-6">
           <div className="text-[1.125rem] font-bold open-sans">We are happy to help you with..</div>
           <div className="space-y-3">
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-4 items-center open-sans">
             <div className="w-[13px] h-[13px] rounded-full bg-[#C95D2F]" />
             Choosing the right wedding package.
           </div>
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-4 items-center open-sans">
             <div className="w-[13px] h-[13px] rounded-full bg-[#C95D2F]" />
             Understanding the rituals and temple process.
           </div>
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-4 items-center open-sans">
             <div className="w-[13px] h-[13px] rounded-full bg-[#C95D2F]" />
             Guest stay and meal arrangements.
           </div>
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-4 items-center open-sans">
             <div className="w-[13px] h-[13px] rounded-full bg-[#C95D2F]" />
             Marriage registration support.
           </div>
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-4 items-center open-sans">
             <div className="w-[13px] h-[13px] rounded-full bg-[#C95D2F]" />
             Customizing your ceremony with your family traditions
           </div>
@@ -47,7 +47,7 @@ const WeddingIntroSection = () => {
 
 
       </div>
-      <div className="flex md:hidden justify-center items-center">
+      <div className="flex xl:hidden justify-center items-center">
             <Image src={contact_us} alt="image" className="w-[18rem]"/>
         </div>
     </div>

@@ -1,12 +1,12 @@
-import TriyuginarayanOverview from '@/components/why-choose/TriyuginarayanOverview'
-import React from 'react'
+import WhyChooseUsPage from "@/pages/WhyChooseUsPage";
+import React from "react";
 
 const page = () => {
   return (
     <div>
-      <TriyuginarayanOverview/>
+      <WhyChooseUsPage />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

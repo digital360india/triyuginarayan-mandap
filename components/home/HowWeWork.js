@@ -34,7 +34,7 @@ const StepMobile = ({ step }) => (
   <div className="w-[70vw] h-[17rem] flex flex-col items-center justify-center bg-white rounded-[35px] shadow-md overflow-hidden">
     <div className="relative w-full h-full ">
       <div className="w-[18rem] h-[18rem] bg-[#FFEBE3] rounded-full absolute -top-[8rem] -left-2 z-0" />
-      <p className="text-[1.1rem] font-semibold text-center px-16 mt-4 absolute z-10 top-0 open-sans flex justify-center items-center w-full h-full">
+      <p className="text-[1.1rem] font-semibold text-center px-16 mt-4 absolute z-10 top-0 open-sans flex justify-center items-center w-full h-full open-sans">
         {step.title}
       </p>
     </div>
@@ -66,7 +66,7 @@ const StepBox = ({ step }) => {
       />
       {!hovered && (
         <div className="flex flex-col w-[13rem] h-[17rem] z-10 relative">
-          <p className="text-[1.4rem] font-semibold mt-2 p-7">{step.title}</p>
+          <p className="text-[1.4rem] font-semibold mt-2 p-7 open-sans">{step.title}</p>
           <Image
             src={step.img}
             alt="icon"
@@ -77,8 +77,8 @@ const StepBox = ({ step }) => {
       {hovered && (
         <div className="flex px-6 transition-opacity duration-500 gap-16 p-10">
           <div className="w-[13rem] flex flex-col z-10">
-            <p className="text-[1.4rem] font-semibold mb-2">{step.title}</p>
-            <p className="text-[1rem] text-gray-600">{step.description}</p>
+            <p className="text-[1.4rem] font-semibold mb-2 open-sans">{step.title}</p>
+            <p className="text-[1rem] text-gray-600 open-sans">{step.description}</p>
           </div>
           <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center">
             <Image src={step.img} alt="img" width={56} height={56} />
@@ -108,10 +108,10 @@ const HowWeWork = () => {
 
   return (
     <div className="w-full px-4 mt-24 max-w-[1440px] space-y-6 overflow-hidden h-[36rem] md:h-fit m-auto">
-      <p className="text-center text-[1.8rem] md:text-[2.25rem] font-bold">
+      <p className="text-center text-[1.8rem] md:text-[2.25rem] font-bold lora">
         How We <span className="text-[#D7764D]">Work</span>
       </p>
-      <p className="text-center text-[1rem] md:text-lg mt-8">
+      <p className="text-center text-[1rem] md:text-lg mt-8 open-sans">
         Booking your Triyuginarayan temple wedding is just a few simple steps
         away.
       </p>
@@ -142,7 +142,7 @@ const HowWeWork = () => {
         </div>
 
         <div className="text-center mt-12 px-22">
-          <p className="text-[1rem] font-semibold">
+          <p className="text-[1rem] font-semibold open-sans">
             {steps[activeIndex]?.description}
           </p>
         </div>
