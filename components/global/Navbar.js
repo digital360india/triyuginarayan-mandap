@@ -97,7 +97,7 @@ const Navbar = () => {
               <div key={index} ref={(el) => (linkRefs.current[index] = el)} className="relative">
                 <Link
                   href={link.href}
-                  className={`text-[0.9rem] md:text-[1rem] px-1 transition-all duration-300 ${pathName === link.href ? "text-[#A42D2B] font-bold" : ""}`}
+                  className={`text-[0.9rem] md:text-[1rem] px-1 transition-all duration-300 ${pathName === link.href ? "text-[#A42D2B] font-bold" : ""} open-sans`}
                 >
                   {link.name}
                 </Link>
@@ -123,7 +123,7 @@ const Navbar = () => {
           </div>
 
           {/* Button */}
-          <button className="hidden lg:block bg-[#C95D2F] text-white text-[16px] font-semibold cursor-pointer px-6 py-3 rounded-[7px]">
+          <button className="hidden lg:block bg-[#C95D2F] text-white text-[16px] font-semibold cursor-pointer px-6 py-3 rounded-[7px] open-sans">
             Plan your Wedding
           </button>
         </div>
@@ -152,7 +152,7 @@ const Navbar = () => {
                       className={`text-[14px] flex items-center gap-2 ${pathName === link.href ? "text-[#A42D2B]" : ""}`}
                       onClick={() => setIsOpen(false)}
                     >
-                      <p className="flex items-center gap-4 text-[18px]">
+                      <p className="flex items-center gap-4 text-[18px] open-sans">
                         <span>{link.icon}</span>{link.name}
                       </p>
                     </Link>
@@ -165,7 +165,7 @@ const Navbar = () => {
               <div className="flex gap-4">
                 {/* Social links placeholder */}
               </div>
-              <p className="text-[12px] text-[#656565]">
+              <p className="text-[12px] text-[#656565] open-sans">
                 2025 ©️ triyuginarayanmandap
               </p>
             </div>

@@ -10,10 +10,10 @@ const WeddingCost = () => {
       {/* Intro */}
       <div className="text-center px-8 md:px-4 py-8 max-w-3xl mx-auto space-y-6">
         <p className="text-[1.8rem] md:text-[2.25rem] font-bold lora">Wedding <span className="text-[#C95D2F]">Packages</span></p>
-        <p className=" hidden md:block italic text-[3.25rem] font-bold my-2">
+        <p className=" hidden md:block italic text-[3.25rem] font-bold">
           “<span className="text-[#C95D2F]">Simple.</span> Sacred. <span className="text-[#C95D2F]">Serene.</span>”
         </p>
-        <p className="text-justify md:text-center text-[1rem] md:text-lg open-sans">
+        <p className="text-justify md:text-center text-[1rem] md:text-lg open-sans mt-6 leading-loose">
           At Triyuginarayan Mandap, we have created wedding packages with love
           and care. Our goal is to help you plan a beautiful temple wedding that
           is full of blessings and free from stress. We keep everything simple,

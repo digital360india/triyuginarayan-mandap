@@ -20,7 +20,7 @@ const ContactInfoSection = () => {
           <Image src={assistant} alt="image" className="w-[4.8rem]" />
           </span>
         </div>
-        <p className="text-[1rem] md:text-lg open-sans mt-6 px-8 md:px-0 text-justify md:text-center">
+        <p className="text-[1rem] md:text-lg open-sans mt-6 px-8 md:px-0 text-justify md:text-center leading-loose">
           We’re always here to help you with any questions or doubts related to
           weddings or our services. Feel free to reach out via email or call
           anytime between{" "}

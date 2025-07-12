@@ -12,7 +12,7 @@ const WeddingForm = () => {
         <Image src={arrow} alt="image" />
         </div>
         <p className="text-[1.8rem] md:text-[3.25rem] font-bold lora text-center md:text-start">Let&apos;s Begin your wedding journey with the <span className="text-[#C95D2F]">Blessing Of Gods.</span></p>
-        <p className="text-[1rem] md:text-lg text-justify md:text-start open-sans">
+        <p className="text-[1rem] md:text-lg text-justify md:text-start open-sans leading-loose">
           Please fill in the details below to help us understand your wedding
           needs. Our team will reach out with complete guidance and support.
         </p>
@@ -120,7 +120,7 @@ const WeddingForm = () => {
 
   <div className="text-center mt-6">
     <button className="bg-[#C95D2F] text-white font-semibold px-6 py-3 rounded-[7px] hover:bg-[#b34e24] transition open-sans">
-      Submit My Wedding Request
+      Submit My Request
     </button>
   </div>
 </form>

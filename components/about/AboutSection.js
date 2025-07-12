@@ -32,7 +32,7 @@ const AboutSection = () => {
               </div>
           </div>
           <div className="flex flex-col gap-4 leading-loose text-justify md:text-start open-sans text-[1rem] lg:text-lg">
-            <p >
+            <p>
               We are a small team from the hills of Uttarakhand, closely
               connected to the divine land of Triyuginarayan Temple — the place
               where Lord Shiva and Goddess Parvati were married.

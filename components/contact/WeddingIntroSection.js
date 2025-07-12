@@ -12,7 +12,7 @@ const WeddingIntroSection = () => {
         <p className="text-[2.5rem] md:text-[3.25rem] font-bold leading-tight lora">
           Begin Your Forever at <span className="text-[#C95D2F]">Triyuginarayan Temple</span> 
         </p>
-        <p className="text-[1rem] md:text-[1.125rem] text-justify md:text-start leading-relaxed open-sans">
+        <p className="text-[1rem] md:text-[1.125rem] text-justify md:text-start leading-loose open-sans">
           Planning a wedding at Triyuginarayan Temple is not just about dates
           and bookings — it’s about starting a new chapter with peace,
           tradition, and blessings. Whether you’re just exploring the idea or

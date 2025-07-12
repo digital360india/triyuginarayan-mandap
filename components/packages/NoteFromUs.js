@@ -9,7 +9,7 @@ const Note = () => {
         <p className="text-[1rem] text-[#C95D2F] open-sans font-bold flex gap-4 items-center justify-center md:justify-start lora">
           <Image src={material_symbols} alt="imag" />A Note From Us
         </p>
-        <p className="text-[1rem] open-sans text-justify md:text-center">
+        <p className="text-[1rem] open-sans text-justify md:text-center leading-loose">
           &quot;We know how special a wedding is — especially at a place like
           Triyuginarayan. Whether you’re planning something small or grand, we
           are here to help with respect, simplicity, and care— just like

@@ -26,7 +26,7 @@ const TriyuginarayanOverview = () => {
             Why Choose <span className="text-[#F6E8C1]">Triyuginarayan</span>{" "}
             for Your Wedding?
           </p>
-          <p className="w-full lg:w-[80rem] text-white text-[1rem] lg:text-[1.125rem] open-sans z-10 leading-10 px-8 lg:px-0 md:text-center lg:text-start">
+          <p className="w-full lg:w-[80rem] text-white text-[1rem] lg:text-[1.125rem] open-sans z-10 px-8 lg:px-0 md:text-center lg:text-start leading-loose">
             If you’re looking for a wedding that’s simple, soulful, and full of
             meaning, Triyuginarayan is one of the most special places you’ll
             ever find. This is not just a destination — it’s a place where
@@ -56,7 +56,7 @@ const TriyuginarayanOverview = () => {
                 <span className="text-[#C95D2F]">Married</span> Parvati.
               </p>
             </div>
-            <p className="open-sans">
+            <p className="text-justify md:text-start open-sans text-[1rem] leading-loose">
               Triyuginarayan is the same place where Lord Shiva and Goddess
               Parvati got married.The fire from their wedding — the Akhand Dhuni
               — still burns inside the temple. Couples from all over India come
@@ -89,7 +89,7 @@ const TriyuginarayanOverview = () => {
                 <span className="text-[#C95D2F]">Natural </span>Blessings.
               </p>
             </div>
-            <p className="open-sans">
+            <p className="text-justify md:text-start open-sans text-[1rem] leading-loose">
               This is not a crowded city wedding. Triyuginarayan is a peaceful
               village in the Himalayas, surrounded by nature. The air is fresh,
               the views are beautiful, and the atmosphere is calm. It’s the
@@ -113,7 +113,7 @@ const TriyuginarayanOverview = () => {
                 <span className="text-[#C95D2F]">Lifelong</span> Memories.
               </p>
             </div>
-            <p className="open-sans">
+            <p className="text-justify md:text-start open-sans text-[1rem] leading-loose">
               Weddings here are not rushed. You sit near the eternal fire,
               guided by local priests.Mantras are chanted with care, and the
               whole ceremony feels real — not just for photos, but for life.
@@ -144,13 +144,18 @@ const TriyuginarayanOverview = () => {
                 <span className="text-[#C95D2F]">Soul, Not the Show.</span>
               </p>
             </div>
-            <p className="open-sans">
+            <div className="space-y-4 text-justify md:text-start open-sans text-[1rem] leading-loose">
+            <p className="">
               Many couples today don’t want a big show, they want a wedding that
               feels true that’s why Triyuginarayan is becoming one of the most
-              loved sacred Indian wedding destinations. No loud music, no stress
+              loved sacred Indian wedding destinations. 
+            </p>
+              <p className="">
+                No loud music, no stress
               — just your loved ones, your promises, and the blessings of Lord
               Shiva and Goddess Parvati.
-            </p>
+                </p>
+            </div>
           </div>
           <div className="w-full md:w-[40%] flex md:hidden justify-center items-center">
             <Image src={couple} alt="image" className="w-[18rem]" />

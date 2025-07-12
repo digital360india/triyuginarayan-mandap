@@ -13,13 +13,13 @@ const WeddingCost = () => {
           <span className="text-[#C95D2F]">Wedding Cost?</span>
         </p>
 
-        <p className="text-[1rem] leading-[1.75rem] text-justify md:text-center lg:text-left mt-6 md:mt-0 open-sans">
+        <p className="text-[1rem] leading-loose text-justify md:text-center lg:text-left mt-6 md:mt-0 open-sans">
           Your wedding at the sacred Shiva-Parvati mandap can be both meaningful
           and manageable.
         </p>
 
         {/* List */}
-        <div className="space-y-4 text-[1rem] mt-6 w-full md:w-[80%] lg:w-full mx-auto lg:mx-0">
+        <div className="space-y-4 text-[1rem] mt-8 w-full md:w-[80%] lg:w-full mx-auto lg:mx-0">
           {[
             "Weddings start from ₹1,00,000.",
             "Final cost depends on guest count, stay, décor, and rituals.",
