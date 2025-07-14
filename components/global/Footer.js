@@ -1,6 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import logo from "../../assets/images/logo/logo.svg";
+import facebook from "../../assets/images/badges/facebook.svg";
+import whatsapp_fill from "../../assets/images/badges/whatsapp-fill.svg";
+import instagram from "../../assets/images/badges/instagram.svg";
+
 
 const Footer = () => {
   return (
@@ -17,11 +21,14 @@ const Footer = () => {
         <p className="text-[0.9rem] text-gray-600 open-sans">+91-xxx-xxxxx </p>
       </div>
       <div className="lg:w-1/3 hidden lg:flex flex-col items-center">
+      <div>
         <p className="text-[2.25rem] font-bold lora">Follow Us</p>
-        <div className="flex ">
-          <p>insta</p>
-          <p>insta</p>
+        <div className="flex gap-4 mt-4">
+          <Image src={instagram} alt="ig icon"/>
+          <Image src={facebook} alt="fb icon"/>
+          <Image src={whatsapp_fill} alt="wa icon"/>
         </div>
+      </div>
       </div>
       <div className="lg:w-1/3 w-full flex justify-center md:justify-end items-center">
         <Image src={logo} alt="img" className="w-32" />

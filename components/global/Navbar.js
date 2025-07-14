@@ -9,6 +9,8 @@ import { RxCross2 } from "react-icons/rx";
 import { TiHome } from "react-icons/ti";
 import { IoPeople, IoCall } from "react-icons/io5";
 import { Icon } from '@iconify/react';
+import facebook from "../../assets/images/badges/facebook.svg";
+import instagram from "../../assets/images/badges/instagram.svg";
 
 const Navbar = () => {
   const pathName = usePathname();
@@ -104,7 +106,7 @@ const Navbar = () => {
               </div>
             ))}
             <div
-              className="absolute bottom-0 h-[4px] bg-[#A42D2B] transition-all duration-500 ease-in-out rounded-lg"
+              className="absolute top-6 bottom-0 h-[4px] bg-[#A42D2B] transition-all duration-500 ease-in-out rounded-lg"
               style={{
                 left: underlinePos.left,
                 width: underlinePos.width,
@@ -134,7 +136,7 @@ const Navbar = () => {
         <div className="fixed inset-0 bg-black/50 z-50 md:hidden">
           <div
             ref={menuRef}
-            className="absolute top-0 right-0 bg-white w-[80vw] max-w-[300px] h-full z-50 py-10 flex flex-col justify-between"
+            className="absolute top-0 right-0 bg-white w-[80vw] max-w-[300px] h-[100vh] z-50 py-10 flex flex-col justify-between"
           >
             <div>
               <div className="flex justify-between items-center px-5">
@@ -163,7 +165,8 @@ const Navbar = () => {
 
             <div className="flex flex-col gap-4 mt-10 p-5 mb-7">
               <div className="flex gap-4">
-                {/* Social links placeholder */}
+                <Image src={instagram} alt="ig image"/>
+                <Image src={facebook} alt="ig image"/>
               </div>
               <p className="text-[12px] text-[#656565] open-sans">
                 2025 ©️ triyuginarayanmandap
