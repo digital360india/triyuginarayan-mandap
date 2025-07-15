@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import logo from "../../assets/images/logo/logo.svg";
 import facebook from "../../assets/images/badges/facebook.svg";
-import whatsapp_fill from "../../assets/images/badges/whatsapp-fill.svg";
 import instagram from "../../assets/images/badges/instagram.svg";
+import whatsapp_fill from "../../assets/images/badges/whatsapp-fill.svg";
 
 
 const Footer = () => {
