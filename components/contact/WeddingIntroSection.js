@@ -47,7 +47,7 @@ const WeddingIntroSection = () => {
 
 
       </div>
-      <div className="flex xl:hidden justify-center items-center">
+      <div className="flex md:hidden justify-center items-center">
             <Image src={contact_us} alt="image" className="w-[18rem]"/>
         </div>
     </div>

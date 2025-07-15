@@ -12,7 +12,7 @@ const AboutSection = () => {
         </div>
         <div className="w-full xl:w-[60%] flex flex-col gap-10 p-0 md:p-4 px-8 md:px-4">
           <div>
-            <div className="flex items-center justify-center lg:justify-start gap-4">
+            <div className="flex items-center justify-center xl:justify-start gap-4">
               <p className="text-[2.5rem] lg:text-[3.5rem] text-[#C95D2F] lora font-bold">नमस्ते!</p>
               <div className="w-[2.5rem] h-[2.5rem] md:w-[3.5rem] md:h-[3.5rem] bg-[#C95D2F] rounded-full flex justify-center items-center">
                 <Image
@@ -22,7 +22,7 @@ const AboutSection = () => {
                 />
               </div>
               </div>
-              <div className="text-center lg:text-start">
+              <div className="text-center xl:text-start">
                 <p className="text-[2.5rem] lg:text-[3.5rem] font-bold lora">
                   Welcome to Our World of{" "}
                   <span className="text-[#C95D2F]">
@@ -31,7 +31,7 @@ const AboutSection = () => {
                 </p>
               </div>
           </div>
-          <div className="flex flex-col gap-4 leading-loose text-justify md:text-start open-sans text-[1rem] lg:text-lg">
+          <div className="flex flex-col gap-4 leading-loose text-justify md:text-center xl:text-start open-sans text-[1rem] lg:text-lg">
             <p>
               We are a small team from the hills of Uttarakhand, closely
               connected to the divine land of Triyuginarayan Temple — the place

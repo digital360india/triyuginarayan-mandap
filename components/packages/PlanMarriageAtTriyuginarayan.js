@@ -13,8 +13,8 @@ const PlanMarriageAtTriyuginarayan = () => {
   return (
     <div className="flex flex-col xl:flex-row gap-22 m-auto max-w-[1440px] p-5 lg:p-10 h-[900px] xl:h-[500px]">
       <div className="flex flex-col gap-12">
-        <p className="w-full lg:text-center xl:text-start xl:w-[600px] text-[2.5rem] md:text-[3.75rem] font-bold lora leading-tight px-5 md:px-10"><span className="text-[#C95D2F]">Plan Your Marriage</span> at the Same Place Where It <span className="text-[#C95D2F]">All Began.</span></p>
-        <div className="px-5 md:px-10 lg:mx-auto xl:mx-0">
+        <p className="w-full md:text-center xl:text-start xl:w-[600px] text-[2.5rem] md:text-[3.75rem] font-bold lora leading-tight px-5 md:px-10"><span className="text-[#C95D2F]">Plan Your Marriage</span> at the Same Place Where It <span className="text-[#C95D2F]">All Began.</span></p>
+        <div className="px-5 md:px-10 md:mx-auto xl:mx-0">
           <button className="bg-[#C95D2F] text-center text-[1rem] text-white font-semibold cursor-pointer px-6 py-3 rounded-[7px] flex justify-start open-sans">
             Custom wedding plan
           </button>
