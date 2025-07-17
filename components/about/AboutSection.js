@@ -7,8 +7,8 @@ const AboutSection = () => {
   return (
     <div>
       <div className="flex flex-col xl:flex-row md:gap-0 gap-10 m-auto max-w-[1440px] p-0 md:p-10">
-        <div className="hidden w-[40%] xl:flex justify-center">
-          <Image src={about_us} alt="img" className="xl:w-[28rem]" />
+        <div className="hidden w-[40%] xl:flex justify-center items-center">
+          <Image src={about_us} alt="img" className="w-[350px] h-[350px]" />
         </div>
         <div className="w-full xl:w-[60%] flex flex-col gap-10 p-0 md:p-4 px-8 md:px-4">
           <div>
