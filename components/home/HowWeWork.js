@@ -31,9 +31,9 @@ const steps = [
 
 // Card for Mobile
 const StepMobile = ({ step }) => (
-  <div className="w-[70vw] h-[17rem] flex flex-col items-center justify-center bg-white rounded-[35px] shadow-md overflow-hidden">
+  <div className="w-[290px] h-[17rem] flex flex-col items-center justify-center bg-white rounded-[35px] shadow-md overflow-hidden">
     <div className="relative w-full h-full ">
-      <div className="w-[18rem] h-[18rem] bg-[#FFEBE3] rounded-full absolute -top-[8rem] -left-2 z-0" />
+      <div className="w-[290px] h-[290px] bg-[#FFEBE3] rounded-full absolute -top-[8rem] z-0" />
       <p className="text-[1.1rem] font-semibold text-center px-16 mt-4 absolute z-10 top-0 open-sans flex justify-center items-center w-full h-full open-sans">
         {step.title}
       </p>
