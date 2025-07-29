@@ -15,10 +15,10 @@ const Footer = () => {
             Triyuginarayan Temple, Rudraprayag, Uttarakhand.
           </p>
           <p className="text-[0.9rem] text-gray-600 open-sans break-all">
-            triyuginarayanweddingwork@gmail.com
+            triyuginarayanmandap@gmail.com
           </p>
           <p className="text-[0.9rem] text-gray-600 open-sans">
-            +91-9023577149{" "}
+            +91 95575 36477{" "}
           </p>
         </div>
         <div className="lg:w-1/3 hidden lg:flex flex-col items-center">
@@ -40,7 +40,7 @@ const Footer = () => {
                 <Image src={facebook} alt="Facebook icon" />
               </a>
               <a
-                href="https://wa.me/919023577149"
+                href="https://wa.me/+91 95575 36477"
                 target="_blank"
                 rel="noopener noreferrer"
               >

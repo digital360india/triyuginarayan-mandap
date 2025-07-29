@@ -99,7 +99,6 @@ const plans = [
       </React.Fragment>,
       <React.Fragment key="p4">
         <FaCheckCircle className="text-green-500 w-6 h-6" />
-        
         Traditional meals
       </React.Fragment>,
       <React.Fragment key="p5">
@@ -125,7 +124,7 @@ export default function Plans() {
   return (
     <div className="max-w-6xl mx-auto p-6 relative">
       {/* Plan Buttons */}
-      <div className="grid grid-cols-[1fr_repeat(3,minmax(0,1fr))] gap-4 mb-6 items-center sticky top-[100px] bg-[#F6EBC1]">
+      <div className="grid grid-cols-[1fr_repeat(3,minmax(0,1fr))] gap-4 mb-6 items-center sticky top-[100px] bg-[#F6EBC1] overflow-x-auto md:overflow-visible">
         <p className="text-3xl font-bold text-gray-800 open-sans">Plans</p>
         {plans.map((plan, i) => (
           <button
@@ -139,8 +138,8 @@ export default function Plans() {
       </div>
 
       {/* Features + Plan Columns */}
-      <div className="grid grid-cols-[1fr_repeat(3,minmax(0,1fr))] gap-5">
-        <div className="grid grid-rows-9 gap-4 text-lg font-medium text-gray-900">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_repeat(3,minmax(0,1fr))] gap-5">
+        <div className="grid grid-rows-9 gap-4 text-sm md:text-lg font-medium text-gray-900">
           {features.map((feature, i) => (
             <p key={`feature-${i}`} className="flex items-center open-sans">
               {feature}
@@ -157,7 +156,9 @@ export default function Plans() {
             } ${plan.bg}`}
           >
             {plan.features.map((content, j) => (
-              <div key={`feature-${i}-${j}`} className="h-20">{content}</div>
+              <div key={`feature-${i}-${j}`} className="h-20">
+                {content}
+              </div>
             ))}
             <button
               className="w-full text-white py-2 rounded-lg self-end mt-2 open-sans"
@@ -168,6 +169,8 @@ export default function Plans() {
           </div>
         ))}
       </div>
+
+     
     </div>
   );
 }

@@ -34,14 +34,14 @@ const ContactInfoSection = () => {
             <Image src={whatsapp} alt="image" />
             <div className="text-start open-sans">
               <p className="font-bold">Contact us</p>
-              <p>+91-9023577149</p>
+              <p>+91 95575 36477</p>
             </div>
           </div>
           <div className="flex gap-6 text-[1rem] md:text-lg">
             <Image src={email} alt="image" />
             <div className="text-start open-sans">
               <p className="font-bold">Email us</p>
-            <p className="break-all">contact@triyuginarayanmandap.in</p>
+            <p className="break-all">triyuginarayanmandap@gmail.com</p>
             </div>
           </div>
         </div>
