@@ -40,7 +40,7 @@ const Footer = () => {
                 <Image src={facebook} alt="Facebook icon" />
               </a>
               <a
-                href="https://wa.me/+91 95575 36477"
+                href="https://wa.me/919557536477"
                 target="_blank"
                 rel="noopener noreferrer"
               >
