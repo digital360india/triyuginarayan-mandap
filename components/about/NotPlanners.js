@@ -18,10 +18,10 @@ const NotPlanners = () => {
       </div>
 
       <p className="md:mt-[2.19rem] max-w-[700px] text-justify md:text-center text-[1rem] md:text-lg open-sans">
-        We don’t call ourselves “wedding planners.” We are facilitators of
+        We don&apos;t call ourselves “wedding planners.” We are facilitators of
         sacred bonds — people who understand that a marriage is not just about
         lights and music, but about blessings, rituals, and true beginnings.
-        Whether it’s your daughter’s wedding or your own, we’ll take care of
+        Whether it&apos;s your daughter&apos;s wedding or your own, we&apos;ll take care of
         everything with as much love and honesty as we would for our own family.
       </p>
     </div>

@@ -102,26 +102,26 @@ const WeddingForm = () => {
           className="bg-[#FBF9F9] w-[90%] max-w-[39.125rem] m-auto flex flex-col justify-center gap-10 p-5 rounded-[1rem] shadow-[0px_0px_38px_0px_rgba(0,0,0,0.18)]"
         >
           <div className="flex flex-col gap-2">
-            <label className="font-semibold">Bride’s Name</label>
+            <label className="font-semibold">Bride&apos;s Name</label>
             <input
               type="text"
               name="brideName"
               value={formData.brideName}
               onChange={handleChange}
-              placeholder="Enter Bride’s Name"
+              placeholder="Enter Bride&apos;s Name"
               className="bg-[#EBEBEB] p-4 rounded-[7px] outline-none"
               required
             />
           </div>
 
           <div className="flex flex-col gap-2">
-            <label className="font-semibold">Groom’s Name</label>
+            <label className="font-semibold">Groom&apos;s Name</label>
             <input
               type="text"
               name="groomName"
               value={formData.groomName}
               onChange={handleChange}
-              placeholder="Enter Groom’s Name"
+              placeholder="Enter Groom&apos;s Name"
               className="bg-[#EBEBEB] p-4 rounded-[7px] outline-none"
               required
             />

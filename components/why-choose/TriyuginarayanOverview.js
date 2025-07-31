@@ -27,10 +27,10 @@ const TriyuginarayanOverview = () => {
             for Your Wedding?
           </p>
           <p className="w-full lg:w-[80rem] text-white text-[1rem] lg:text-[1.125rem] open-sans z-10 px-8 lg:px-0 md:text-center lg:text-start leading-loose">
-            If you’re looking for a wedding that’s simple, soulful, and full of
-            meaning, Triyuginarayan is one of the most special places you’ll
-            ever find. This is not just a destination — it’s a place where
-            marriage truly began.Here’s why so many couples are choosing a
+            If you&apos;re looking for a wedding that&apos;s simple, soulful, and full of
+            meaning, Triyuginarayan is one of the most special places you&apos;ll
+            ever find. This is not just a destination — it&apos;s a place where
+            marriage truly began.Here&apos;s why so many couples are choosing a
             wedding at Triyuginarayan Temple for their big day:
           </p>
         </div>
@@ -60,8 +60,8 @@ const TriyuginarayanOverview = () => {
               Triyuginarayan is the same place where Lord Shiva and Goddess
               Parvati got married.The fire from their wedding — the Akhand Dhuni
               — still burns inside the temple. Couples from all over India come
-              here to take their vows where the gods once stood.If you’re
-              looking for a wedding that’s not just beautiful, but blessed, this
+              here to take their vows where the gods once stood.If you&apos;re
+              looking for a wedding that&apos;s not just beautiful, but blessed, this
               is the right place.
             </p>
           </div>
@@ -92,7 +92,7 @@ const TriyuginarayanOverview = () => {
             <p className="text-justify md:text-start open-sans text-[1rem] leading-loose">
               This is not a crowded city wedding. Triyuginarayan is a peaceful
               village in the Himalayas, surrounded by nature. The air is fresh,
-              the views are beautiful, and the atmosphere is calm. It’s the
+              the views are beautiful, and the atmosphere is calm. It&apos;s the
               perfect place to begin your new life — with peace in your heart
               and blessings all around.
             </p>
@@ -146,8 +146,8 @@ const TriyuginarayanOverview = () => {
             </div>
             <div className="space-y-4 text-justify md:text-start open-sans text-[1rem] leading-loose">
             <p className="">
-              Many couples today don’t want a big show, they want a wedding that
-              feels true that’s why Triyuginarayan is becoming one of the most
+              Many couples today don&apos;t want a big show, they want a wedding that
+              feels true that&apos;s why Triyuginarayan is becoming one of the most
               loved sacred Indian wedding destinations. 
             </p>
               <p className="">

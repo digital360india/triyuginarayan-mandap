@@ -21,7 +21,7 @@ const ContactInfoSection = () => {
           </span>
         </div>
         <p className="text-[1rem] md:text-lg open-sans mt-6 px-8 md:px-0 text-justify md:text-center leading-loose">
-          We’re always here to help you with any questions or doubts related to
+          We&apos;re always here to help you with any questions or doubts related to
           weddings or our services. Feel free to reach out via email or call
           anytime between{" "}
           <span className="text-[#C95D2F] font-bold">
@@ -54,7 +54,7 @@ const ContactInfoSection = () => {
 
         <div className="w-full mx-auto flex flex-col gap-8 mt-10 text-[1rem] md:text-lg open-sans px-8 md:px-0">
           <p className="open-sans">
-            You can also fill out the form below and we’ll get back to you as
+            You can also fill out the form below and we&apos;ll get back to you as
             soon as possible.
           </p>
           <div className="mx-auto">

@@ -14,9 +14,9 @@ const WeddingIntroSection = () => {
         </p>
         <p className="text-[1rem] md:text-[1.125rem] text-justify md:text-start leading-loose open-sans">
           Planning a wedding at Triyuginarayan Temple is not just about dates
-          and bookings — it’s about starting a new chapter with peace,
-          tradition, and blessings. Whether you’re just exploring the idea or
-          ready to book your date, we’re here to help you with care, clarity,
+          and bookings — it&apos;s about starting a new chapter with peace,
+          tradition, and blessings. Whether you&apos;re just exploring the idea or
+          ready to book your date, we&apos;re here to help you with care, clarity,
           and love — just like family.
         </p>
         <div className="space-y-6">

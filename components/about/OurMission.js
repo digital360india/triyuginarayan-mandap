@@ -9,8 +9,8 @@ const OurMission = () => {
       </p>
       <p className="text-justify md:text-center text-[1rem] md:text-lg md:mt-[2.19rem] open-sans leading-loose">
         We want every couple to have a real, sacred, and affordable temple
-        wedding, without stress, confusion, or over-spending. We’re not here to
-        sell packages. We’re here to support marriages, the way our elders
+        wedding, without stress, confusion, or over-spending. We&apos;re not here to
+        sell packages. We&apos;re here to support marriages, the way our elders
         taught us — with love, faith, and full sincerity.
       </p>
     </div>
