@@ -6,11 +6,11 @@ const plans = [
   {
     title: "Basic",
     subtitle: "For small weddings",
-    price: "₹99,999",
+    price: "₹1,13,999",
     features: [
       "Wedding Rituals by Local Purohit",
       "Marriage Registration Support",
-      "Stay for Guests (Upto 5 Guests, 1 Night)",
+      "Stay for Guests (Upto 10 Guests, 1 day 2 Night)",
       "Guidance for Food/Meals",
       "Help with Wedding Arrangements",
       "Garlands & basic Décor- Photographer-Tea/ snacks"
@@ -21,11 +21,11 @@ const plans = [
   {
     title: "Standard",
     subtitle: "For small and medium sized weddings",
-    price: "₹1,19,999",
+    price: "₹3,30,999",
     features: [
       "Wedding Rituals by Local Purohit (with assistant)",
       "Marriage Registration Support",
-      "Stay for Guests (Upto 10 Guests, 1 Night)",
+      "Stay for Guests (Upto 35 Guests, 2 day 2 Night)",
       "Guidance for Food/Meals (wedding Bhoj-satvik meals)",
       "Help with Wedding Arrangements",
       "Mandap Decoration (Flowers & cloth)",
@@ -39,11 +39,11 @@ const plans = [
   {
     title: "Premium",
     subtitle: "For large weddings",
-    price: "₹1,49,999",
+    price: "₹6,54,999",
     features: [
       "Wedding Rituals by Local Purohit (with assistant)",
       "Marriage Registration Support",
-      "Stay for Guests (Upto 10 Guests, 1 Night)",
+      "Stay for Guests (Upto 70 Guests, 3 day 2 Night)",
       "Guidance for Food/Meals( Traditional Meals)",
       "Help with Wedding Arrangements",
       "Mandap Decoration (Full Floral & Mandap Decoration)",

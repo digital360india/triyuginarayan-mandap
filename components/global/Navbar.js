@@ -8,7 +8,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { TiHome } from "react-icons/ti";
 import { IoPeople, IoCall } from "react-icons/io5";
-import { Icon } from '@iconify/react';
+import { Icon } from "@iconify/react";
 import facebook from "../../assets/images/badges/facebook.svg";
 import instagram from "../../assets/images/badges/instagram.svg";
 
@@ -20,13 +20,32 @@ const Navbar = () => {
   const [underlinePos, setUnderlinePos] = useState({ left: 0, width: 0 });
   const [animate, setAnimate] = useState(false);
 
-  const links = useMemo(() => [
-    { name: "Home", href: "/", icon: <TiHome className="text-[1.5rem]" /> },
-    { name: "About us", href: "/about", icon: <IoPeople className="text-[1.5rem]" /> },
-    { name: "Packages", href: "/packages", icon: <Icon icon="ix:package-filled" width="24" height="24" /> },
-    { name: "Why Choose Us", href: "/why-choose-us", icon: <Icon icon="mingcute:hand-finger-fill" width="24" height="24" /> },
-    { name: "Contact Us", href: "/contact-us", icon: <IoCall className="text-[1.5rem]" /> },
-  ], []);
+  const links = useMemo(
+    () => [
+      { name: "Home", href: "/", icon: <TiHome className="text-[1.5rem]" /> },
+      {
+        name: "About us",
+        href: "/about",
+        icon: <IoPeople className="text-[1.5rem]" />,
+      },
+      {
+        name: "Packages",
+        href: "/packages",
+        icon: <Icon icon="ix:package-filled" width="24" height="24" />,
+      },
+      {
+        name: "Why Choose Us",
+        href: "/why-choose-us",
+        icon: <Icon icon="mingcute:hand-finger-fill" width="24" height="24" />,
+      },
+      {
+        name: "Contact Us",
+        href: "/contact-us",
+        icon: <IoCall className="text-[1.5rem]" />,
+      },
+    ],
+    []
+  );
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -70,16 +89,18 @@ const Navbar = () => {
 
   useEffect(() => {
     // Lock scroll when mobile menu is open
-    document.body.style.overflow = isOpen ? 'hidden' : 'auto';
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
     return () => {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = "auto";
     };
   }, [isOpen]);
 
   return (
     <div className="bg-[#C95D2F] h-[100px] w-full">
       <div
-        className={`bg-[#F6EBC1] h-[100px] w-full transform transition-transform duration-1600 ease-in-out ${animate ? "translate-y-0" : "-translate-y-full"} flex justify-between items-center fixed z-50`}
+        className={`bg-[#F6EBC1] h-[100px] w-full transform transition-transform duration-1600 ease-in-out ${
+          animate ? "translate-y-0" : "-translate-y-full"
+        } flex justify-between items-center fixed z-50`}
       >
         <div className="flex justify-between items-center max-w-[1400px] mx-auto px-5 md:px-8 lg:px-10 py-3 w-full">
           {/* Logo */}
@@ -96,10 +117,16 @@ const Navbar = () => {
           {/* Desktop & Tablet Menu */}
           <div className="relative hidden md:flex space-x-6" ref={menuRef}>
             {links.map((link, index) => (
-              <div key={index} ref={(el) => (linkRefs.current[index] = el)} className="relative">
+              <div
+                key={index}
+                ref={(el) => (linkRefs.current[index] = el)}
+                className="relative"
+              >
                 <Link
                   href={link.href}
-                  className={`text-[0.9rem] md:text-[1rem] px-1 transition-all duration-300 ${pathName === link.href ? "text-[#A42D2B] font-bold" : ""} open-sans`}
+                  className={`text-[0.9rem] md:text-[1rem] px-1 transition-all duration-300 ${
+                    pathName === link.href ? "text-[#A42D2B] font-bold" : ""
+                  } open-sans`}
                 >
                   {link.name}
                 </Link>
@@ -110,7 +137,7 @@ const Navbar = () => {
               style={{
                 left: underlinePos.left,
                 width: underlinePos.width,
-                transition: 'all 400ms cubic-bezier(0.34, 1.56, 0.64, 1)',
+                transition: "all 400ms cubic-bezier(0.34, 1.56, 0.64, 1)",
               }}
             />
           </div>
@@ -118,7 +145,10 @@ const Navbar = () => {
           {/* Mobile Menu Icon */}
           <div className="flex items-center md:hidden">
             {!isOpen && (
-              <div onClick={() => setIsOpen(true)} className="cursor-pointer text-[2rem]">
+              <div
+                onClick={() => setIsOpen(true)}
+                className="cursor-pointer text-[2rem]"
+              >
                 <GiHamburgerMenu />
               </div>
             )}
@@ -140,7 +170,7 @@ const Navbar = () => {
           >
             <div>
               <div className="flex justify-between items-center px-5">
-                <Image src={Logo} alt='img' className="w-12" />
+                <Image src={Logo} alt="img" className="w-12" />
                 <div className="text-[2rem]" onClick={() => setIsOpen(false)}>
                   <RxCross2 />
                 </div>
@@ -151,11 +181,14 @@ const Navbar = () => {
                   <li key={index} className="my-2">
                     <Link
                       href={link.href}
-                      className={`text-[14px] flex items-center gap-2 ${pathName === link.href ? "text-[#A42D2B]" : ""}`}
+                      className={`text-[14px] flex items-center gap-2 ${
+                        pathName === link.href ? "text-[#A42D2B]" : ""
+                      }`}
                       onClick={() => setIsOpen(false)}
                     >
                       <p className="flex items-center gap-4 text-[18px] open-sans">
-                        <span>{link.icon}</span>{link.name}
+                        <span>{link.icon}</span>
+                        {link.name}
                       </p>
                     </Link>
                   </li>
@@ -165,8 +198,20 @@ const Navbar = () => {
 
             <div className="flex flex-col gap-4 mt-10 p-5 mb-7">
               <div className="flex gap-4">
-                <Image src={instagram} alt="ig image"/>
-                <Image src={facebook} alt="ig image"/>
+                <a
+                  href="https://www.instagram.com/triyuginarayanmandap/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image src={instagram} alt="Instagram icon" />
+                </a>
+                <a
+                  href="https://www.facebook.com/share/14G1NtbZVRd/?mibextid=LQQJ4d"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image src={facebook} alt="Facebook icon" />
+                </a>
               </div>
               <p className="text-[12px] text-[#656565] open-sans">
                 2025 ©️ triyuginarayanmandap
