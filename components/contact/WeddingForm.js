@@ -96,7 +96,7 @@ const WeddingForm = () => {
         </div>
       </div>
 
-      <div className="w-full lg:w-[50%] mt-5">
+      <div className="w-[100%] lg:w-[50%] mt-5">
         <form
           onSubmit={handleSubmit}
           className="bg-[#FBF9F9] w-[90%] max-w-[39.125rem] m-auto flex flex-col justify-center gap-10 p-5 rounded-[1rem] shadow-[0px_0px_38px_0px_rgba(0,0,0,0.18)]"

@@ -8,71 +8,77 @@ const plans = [
     subtitle: "For small weddings",
     price: "₹1,13,999",
     features: [
-      "Wedding Rituals by Local Purohit",
-      "Marriage Registration Support",
-      "Stay for Guests (Upto 10 Guests, 1 day 2 Night)",
-      "Guidance for Food/Meals",
-      "Help with Wedding Arrangements",
-      "Garlands & basic Décor- Photographer-Tea/ snacks"
+      "1 Day / 1 Night for 10 Guests",
+      "Catering Included.",
+      "Temple Registration Included",
+      "Makeup Artist Included",
+      "Photography (Standard Coverage) ",
+      "Customization on this plan is available on request.",
     ],
     bg_color: "bg-[#4E4E4E]",
-    color:"text-[#4E4E4E]"
+    color: "text-[#4E4E4E]",
   },
   {
     title: "Standard",
     subtitle: "For small and medium sized weddings",
     price: "₹3,30,999",
     features: [
-      "Wedding Rituals by Local Purohit (with assistant)",
-      "Marriage Registration Support",
-      "Stay for Guests (Upto 35 Guests, 2 day 2 Night)",
-      "Guidance for Food/Meals (wedding Bhoj-satvik meals)",
-      "Help with Wedding Arrangements",
-      "Mandap Decoration (Flowers & cloth)",
-      "Support for Haldi/Mehndi Rituals",
-      "Dhol/music- Rangoli/diya- Local gifts (optional)"
+      "2 Days / 2 Nights for 35 Guests.",
+      "Catering Included.",
+      "Temple Registration Included.",
+      "Makeup Artist Included.",
+      "Photography( Enhanced Coverage)",
+      "DJ & Dhol Damau  Included.",
+      "Customization on this plan is available on request.",
     ],
     bg_color: "bg-[#C95D2F]",
-    color:"text-[#C95D2F]"
-    
+    color: "text-[#C95D2F]",
   },
   {
     title: "Premium",
     subtitle: "For large weddings",
     price: "₹6,54,999",
     features: [
-      "Wedding Rituals by Local Purohit (with assistant)",
-      "Marriage Registration Support",
-      "Stay for Guests (Upto 70 Guests, 3 day 2 Night)",
-      "Guidance for Food/Meals( Traditional Meals)",
-      "Help with Wedding Arrangements",
-      "Mandap Decoration (Full Floral & Mandap Decoration)",
-      "Support for Haldi/Mehndi Rituals (Haldi, mangal geet, aarti, dhol)",
-      "Floral bride entry- Reels/photoshoot-traditional attire shoot."
+      "3 Days/ 2 Nights for 70 Guests",
+      "Catering Included",
+      "Temple Registration Included",
+      "Makeup Artist Included",
+      "Photography( Premium Coverage)",
+      "DJ & Dhol Damau Included.",
+      "Decoration also Included.",
+      "Customization on thisplan is available on request.",
     ],
-    bg_color:"bg-[#A42D2B]",
-    color:"text-[#A42D2B]"
+    bg_color: "bg-[#A42D2B]",
+    color: "text-[#A42D2B]",
   },
 ];
 
-const PlanCard = ({ title, subtitle, price, features, bg_color,color }) => (
+const PlanCard = ({ title, subtitle, price, features, bg_color, color }) => (
   <div className="snap-center shrink-0 w-[85%] sm:w-[350px] bg-white rounded-[1.3rem] border-1 border-[#C95D2F] shadow-[0px_4px_31.8px_0px] shadow-[#c95d2f57] p-6 m-4 h-[46rem] space-y-6">
-    <p className={`text-center text-[1.75rem] font-bold ${color} open-sans`}>{title}</p>
-    <p className="text-center text-[1rem] text-gray-600 open-sans">{subtitle}</p>
-    <p className={`text-center text-[3.125rem] font-bold open-sans ${color}`}>{price}</p>
+    <p className={`text-center text-[1.75rem] font-bold ${color} open-sans`}>
+      {title}
+    </p>
+    <p className="text-center text-[1rem] text-gray-600 open-sans">
+      {subtitle}
+    </p>
+    <p className={`text-center text-[3.125rem] font-bold open-sans ${color}`}>
+      {price}
+    </p>
     <div className="bg-[#FFF9F2] p-4 rounded-md border border-[#333] h-[21rem] overflow-y-auto">
       <ul className="space-y-4 py-[1rem] px-[1rem]">
         {features.map((item, i) => (
           <li key={i} className="flex items-start gap-2 text-sm open-sans">
             <span className="w-[1.3rem] h-[1.3rem] ">
-            <FaCheckCircle className="text-green-500 mt-1" />
+              <FaCheckCircle className="text-green-500 mt-1" />
             </span>
             <span>{item}</span>
           </li>
         ))}
       </ul>
     </div>
-    <button className={`${bg_color} text-white w-full mt-10 py-2 rounded-lg hover:bg-orange-600 open-sans`}>
+    <button
+      className={`${bg_color} text-white w-full mt-10 py-2 rounded-lg hover:bg-orange-600 open-sans`}
+    >
       See Plans
     </button>
   </div>
