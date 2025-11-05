@@ -6,7 +6,6 @@ import Image from "next/image";
 const WeddingCost = () => {
   return (
     <div className="max-w-[1440px] flex flex-col justify-center items-center lg:flex-row lg:justify-between mt-[6rem] md:mt-[10rem] lg:h-[600px] w-full m-auto px-5 md:px-10">
-      {/* Left Text Section */}
       <div className="w-full lg:w-1/2 space-y-6 md:space-y-8 px-4 md:px-10">
         <p className="text-[1.8rem] md:text-[2.25rem] font-bold text-center lg:text-left lora">
           What Does a Triyuginarayan Temple{" "}
@@ -18,7 +17,6 @@ const WeddingCost = () => {
           and manageable.
         </p>
 
-        {/* List */}
         <div className="space-y-4 text-[1rem] mt-8 w-full md:w-[80%] lg:w-full mx-auto lg:mx-0">
           {[
             "Weddings start from ₹1,00,000.",
@@ -35,7 +33,6 @@ const WeddingCost = () => {
           ))}
         </div>
 
-        {/* Button */}
         <div className="mt-10 flex justify-center lg:justify-start">
           <button className="bg-[#C95D2F] text-white text-[16px] font-semibold px-6 py-3 rounded-[7px] open-sans">
             Know your wedding cost
@@ -43,7 +40,6 @@ const WeddingCost = () => {
         </div>
       </div>
 
-      {/* Right Image Section */}
       <div className="relative w-full lg:w-1/2 h-[400px] md:h-[400px] lg:h-[600px] flex  justify-center mt-16 md:mt-0 overflow-hidden">
         <div className="absolute top-[20px] w-[290px] h-[290px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] animate-spin spin-slow z-10">
           <Image

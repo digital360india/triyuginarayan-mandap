@@ -29,7 +29,6 @@ const steps = [
   },
 ];
 
-// Card for Mobile
 const StepMobile = ({ step }) => (
   <div className="w-[290px] h-[17rem] flex flex-col items-center justify-center bg-white rounded-[35px] shadow-md overflow-hidden">
     <div className="relative w-full h-full ">
@@ -44,7 +43,6 @@ const StepMobile = ({ step }) => (
   </div>
 );
 
-// Card for Desktop
 const StepBox = ({ step }) => {
   const [hovered, setHovered] = useState(false);
   const isLeft = step.direction === "left";
@@ -116,7 +114,6 @@ const HowWeWork = () => {
         away.
       </p>
 
-      {/* Mobile Section */}
       <div className="block md:hidden">
         <div
           ref={scrollRef}
@@ -148,7 +145,6 @@ const HowWeWork = () => {
         </div>
       </div>
 
-      {/* Desktop Section */}
       <div className="hidden md:flex gap-10 overflow-x-auto mt-12 px-5 ">
         {steps.map((step, index) => (
           <StepBox
