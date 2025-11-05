@@ -103,7 +103,6 @@ const Navbar = () => {
         } flex justify-between items-center fixed z-50`}
       >
         <div className="flex justify-between items-center max-w-[1400px] mx-auto px-5 md:px-8 lg:px-10 py-3 w-full">
-          {/* Logo */}
           <div className="flex items-center">
             <Link href={"/"}>
               <Image
@@ -141,7 +140,6 @@ const Navbar = () => {
             />
           </div>
 
-          {/* Mobile Menu Icon */}
           <div className="flex items-center md:hidden">
             {!isOpen && (
               <div

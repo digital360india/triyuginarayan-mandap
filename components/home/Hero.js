@@ -18,8 +18,8 @@ const Hero = () => {
     <div className="w-full h-[55rem] md:h-[50rem] lg:h-[640px] bg-[#C95D2F] ">
       <div className="max-w-[1440px] w-full flex flex-col lg:flex-row justify-end items-end overflow-hidden m-auto">
         <div className="relative w-full h-[55rem] md:h-[50rem] lg:h-[640px]">
-         <div
-  className={`
+          <div
+            className={`
     absolute 
     top-10 
     left-1/2 transform -translate-x-1/2
@@ -29,9 +29,7 @@ const Hero = () => {
     transition-all duration-[1600ms] ease-in-out
     ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
   `}
->
-
-            {/* desktop */}
+          >
             <h1 className="hidden lg:block text-white text-[57px] lora">
               <span className="text-[#F6EBC1] font-bold">
                 Triyuginarayan Temple :
