@@ -3,7 +3,7 @@ import React, { useEffect, useState, useRef, useMemo } from "react";
 import Image from "next/image";
 import Logo from "../../assets/images/logo/logo.svg";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { TiHome } from "react-icons/ti";
@@ -88,12 +88,12 @@ const Navbar = () => {
   }, [pathName, links]);
 
   useEffect(() => {
-    // Lock scroll when mobile menu is open
     document.body.style.overflow = isOpen ? "hidden" : "auto";
     return () => {
       document.body.style.overflow = "auto";
     };
   }, [isOpen]);
+  const router = useRouter();
 
   return (
     <div className="bg-[#C95D2F] h-[100px] w-full">
@@ -114,7 +114,6 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Desktop & Tablet Menu */}
           <div className="relative hidden md:flex space-x-6" ref={menuRef}>
             {links.map((link, index) => (
               <div
@@ -154,14 +153,15 @@ const Navbar = () => {
             )}
           </div>
 
-          {/* Button */}
-          <button className="hidden lg:block bg-[#C95D2F] text-white text-[16px] font-semibold cursor-pointer px-6 py-3 rounded-[7px] open-sans">
+          <button
+            onClick={() => router.push("/contact-us")}
+            className="hidden lg:block bg-[#C95D2F] text-white text-[16px] font-semibold cursor-pointer px-6 py-3 rounded-[7px] open-sans"
+          >
             Plan your Wedding
           </button>
         </div>
       </div>
 
-      {/* Mobile Overlay */}
       {isOpen && (
         <div className="fixed inset-0 bg-black/50 z-50 md:hidden">
           <div
