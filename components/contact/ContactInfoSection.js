@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import email from "../../assets/images/badges/email.svg";
@@ -5,6 +6,11 @@ import whatsapp from "../../assets/images/badges/whatsapp.svg";
 import assistant from "../../assets/images/badges/assistant.svg";
 
 const ContactInfoSection = () => {
+  const handleScroll = () => {
+    document
+      .getElementById("wedding-form")
+      ?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="bg-white">
     <div className="w-full max-w-[1440px] md:px-6 py-12  text-center mt-25 m-auto">
@@ -58,7 +64,7 @@ const ContactInfoSection = () => {
             soon as possible.
           </p>
           <div className="mx-auto">
-            <button className="bg-[#C95D2F] text-center text-[16px] text-white font-semibold cursor-pointer px-6 py-3 rounded-[7px] flex justify-start open-sans">
+            <button className="bg-[#C95D2F] text-center text-[16px] text-white font-semibold cursor-pointer px-6 py-3 rounded-[7px] flex justify-start open-sans" onClick={handleScroll}>
               Book your wedding
             </button>
           </div>

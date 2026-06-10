@@ -10,9 +10,9 @@ const Note = () => {
           <Image src={material_symbols} alt="imag" />A Note From Us
         </p>
         <p className="text-[1rem] open-sans text-justify xl:text-start leading-loose">
-          &quot;We know how special a wedding is — especially at a place like
+          &quot;We know how special a wedding is - especially at a place like
           Triyuginarayan. Whether you&apos;re planning something small or grand, we
-          are here to help with respect, simplicity, and care— just like
+          are here to help with respect, simplicity, and care- just like
           family.&quot;
         </p>
         <p className="text-[1rem] text-[#C95D2F] open-sans font-bold text-end">

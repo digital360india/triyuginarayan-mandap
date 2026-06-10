@@ -1,11 +1,19 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import Plans from "./Plans";
 import PlanSlider from "./PlanSlider";
 import { SlCalender } from "react-icons/sl";
 import { IoPeopleSharp } from "react-icons/io5";
 
 const WeddingCost = () => {
+  const plansRef = useRef(null);
+
+  const handleScroll = () => {
+    plansRef.current.scrollIntoView({
+      behavior: "smooth",
+        block: "start",
+    })
+  };
   return (
     <div className="">
       {/* Intro */}
@@ -48,7 +56,7 @@ const WeddingCost = () => {
               </div>
             </div>
 
-            <button className="hidden lg:block bg-[#4E4E4E] mt-4 text-white text-center text-[16px] font-semibold cursor-pointer px-16 py-4 rounded-[7px]">
+            <button className="hidden lg:block bg-[#4E4E4E] mt-4 text-white text-center text-[16px] font-semibold cursor-pointer px-16 py-4 rounded-[7px]" onClick={handleScroll}>
               See Plan
             </button>
           </div>
@@ -74,7 +82,7 @@ const WeddingCost = () => {
               </div>
             </div>
 
-            <button className="hidden lg:block bg-[#C95D2F] text-white mt-4 text-center text-[16px] font-semibold cursor-pointer px-16 py-4 rounded-[7px]">
+            <button className="hidden lg:block bg-[#C95D2F] text-white mt-4 text-center text-[16px] font-semibold cursor-pointer px-16 py-4 rounded-[7px]" onClick={handleScroll}>
               See Plan
             </button>
           </div>
@@ -100,7 +108,7 @@ const WeddingCost = () => {
               </div>
             </div>
 
-            <button className="hidden lg:block bg-[#A42D2B] text-white text-center text-[16px] font-semibold cursor-pointer px-16 py-4 rounded-[7px] mt-4">
+            <button className="hidden lg:block bg-[#A42D2B] text-white text-center text-[16px] font-semibold cursor-pointer px-16 py-4 rounded-[7px] mt-4" onClick={handleScroll}>
               See Plan
             </button>
           </div>
@@ -113,7 +121,7 @@ const WeddingCost = () => {
         <PlanSlider />
       </div>
 
-      <div className="hidden md:block mt-25 mb-25">
+      <div ref={plansRef} className="hidden md:block mt-25 mb-25" id="plans">
         <Plans />
       </div>
     </div>

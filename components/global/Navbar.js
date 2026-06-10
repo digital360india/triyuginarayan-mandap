@@ -11,6 +11,7 @@ import { IoPeople, IoCall } from "react-icons/io5";
 import { Icon } from "@iconify/react";
 import facebook from "../../assets/images/badges/facebook.svg";
 import instagram from "../../assets/images/badges/instagram.svg";
+import WeddingInquiryModal from "./WeddingInquiryModal";
 
 const Navbar = () => {
   const pathName = usePathname();
@@ -19,6 +20,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [underlinePos, setUnderlinePos] = useState({ left: 0, width: 0 });
   const [animate, setAnimate] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const links = useMemo(
     () => [
@@ -44,7 +46,7 @@ const Navbar = () => {
         icon: <IoCall className="text-[1.5rem]" />,
       },
     ],
-    []
+    [],
   );
 
   useEffect(() => {
@@ -98,9 +100,11 @@ const Navbar = () => {
   return (
     <div className="bg-[#C95D2F] h-[100px] w-full">
       <div
-        className={`bg-[#F6EBC1] h-[100px] w-full transform transition-transform duration-1600 ease-in-out ${
-          animate ? "translate-y-0" : "-translate-y-full"
-        } flex justify-between items-center fixed z-50`}
+        style={{
+          top: animate ? "0px" : "-120px",
+          transition: "top 1s ease-in-out",
+        }}
+        className={`bg-[#F6EBC1] h-[100px] w-full transform transition-transform duration-1600 ease-in-out flex justify-between items-center fixed z-50`}
       >
         <div className="flex justify-between items-center max-w-[1400px] mx-auto px-5 md:px-8 lg:px-10 py-3 w-full">
           <div className="flex items-center">
@@ -152,11 +156,13 @@ const Navbar = () => {
           </div>
 
           <button
-            onClick={() => router.push("/contact-us")}
+            onClick={() => setOpen(true)}
             className="hidden lg:block bg-[#C95D2F] text-white text-[16px] font-semibold cursor-pointer px-6 py-3 rounded-[7px] open-sans"
           >
             Plan your Wedding
           </button>
+
+          <WeddingInquiryModal isOpen={open} onClose={() => setOpen(false)} />
         </div>
       </div>
 

@@ -14,12 +14,15 @@ const Footer = () => {
           <p className="text-[0.9rem] text-gray-600 open-sans">
             Triyuginarayan Temple, Rudraprayag, Uttarakhand.
           </p>
-          <p className="text-[0.9rem] text-gray-600 open-sans break-all">
+          <a href="mailto:triyuginarayanmandap@gmail.com" className="text-[0.9rem] text-gray-600 open-sans break-all">
             triyuginarayanmandap@gmail.com
-          </p>
-          <p className="text-[0.9rem] text-gray-600 open-sans">
-            +91 95575 36477{" "}
-          </p>
+          </a>
+          <a
+            href="tel:+919084684360"
+            className="text-[0.9rem] text-gray-600 open-sans"
+          >
+            +91-90846 84360
+          </a>
         </div>
         <div className="lg:w-1/3 hidden lg:flex flex-col items-center">
           <div>
@@ -40,7 +43,7 @@ const Footer = () => {
                 <Image src={facebook} alt="Facebook icon" />
               </a>
               <a
-                href="https://wa.me/919557536477"
+                href="https://wa.me/919084684360"
                 target="_blank"
                 rel="noopener noreferrer"
               >

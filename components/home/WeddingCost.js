@@ -2,6 +2,7 @@ import React from "react";
 import wedding_cost from "../../assets/images/wedding-cost.png";
 import mantra from "../../assets/images/mantra2.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const WeddingCost = () => {
   return (
@@ -34,9 +35,11 @@ const WeddingCost = () => {
         </div>
 
         <div className="mt-10 flex justify-center lg:justify-start">
-          <button className="bg-[#C95D2F] text-white text-[16px] font-semibold px-6 py-3 rounded-[7px] open-sans">
-            Know your wedding cost
-          </button>
+          <Link href="/packages">
+            <button className="bg-[#C95D2F] text-white text-[16px] font-semibold px-6 py-3 rounded-[7px] open-sans">
+              Know your wedding cost
+            </button>
+          </Link>
         </div>
       </div>
 

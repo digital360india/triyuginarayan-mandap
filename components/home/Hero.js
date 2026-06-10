@@ -5,9 +5,11 @@ import shiv_parvati from "../../assets/images/shiv-parvati.png";
 import mantra from "../../assets/images/mantra.png";
 import temple_silhoutte from "../../assets/images/temple-silhoutte.png";
 import { useEffect, useState } from "react";
+import WeddingInquiryModal from "../global/WeddingInquiryModal";
 
 const Hero = () => {
   const [loaded, setLoaded] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => setLoaded(true), 0);
@@ -20,15 +22,15 @@ const Hero = () => {
         <div className="relative w-full h-[55rem] md:h-[50rem] lg:h-[640px]">
           <div
             className={`
-    absolute 
-    top-10 
-    left-1/2 transform -translate-x-1/2
-    lg:left-10 lg:top-30 lg:transform-none lg:translate-x-0
-    w-[300px] md:w-[500px] lg:w-[700px] 
-    flex flex-col gap-10 lg:gap-8 z-10
-    transition-all duration-[1600ms] ease-in-out
-    ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
-  `}
+                        absolute 
+                        top-10 
+                        left-1/2 transform -translate-x-1/2
+                        lg:left-10 lg:top-30 lg:transform-none lg:translate-x-0
+                        w-[300px] md:w-[500px] lg:w-[700px] 
+                        flex flex-col gap-10 lg:gap-8 z-10
+                        transition-all duration-[1600ms] ease-in-out
+                        ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
+                      `}
           >
             <h1 className="hidden lg:block text-white text-[57px] lora">
               <span className="text-[#F6EBC1] font-bold">
@@ -46,15 +48,19 @@ const Hero = () => {
               </h1>
             </div>
             <p className="text-white text-[1rem] lg:text-[18px] w-[320px] md:w-[500px] lg:w-[500px] xl:w-full text-center lg:text-start open-sans">
-              Get married where Shiva and Parvati did — in the sacred Garhwal
+              Get married where Shiva and Parvati did - in the sacred Garhwal
               hills, beside the eternal fire of their divine union. A wedding
               here is not just a ritual, but a timeless blessing.
             </p>
             <div className="mx-auto lg:mx-0">
-              <button className="bg-[#FFB52C] text-center text-[16px] font-semibold cursor-pointer px-6 py-3 rounded-[7px] flex justify-start open-sans">
+              <button
+                className="bg-[#FFB52C] text-center text-[16px] font-semibold cursor-pointer px-6 py-3 rounded-[7px] flex justify-start open-sans"
+                onClick={() => setIsOpen(true)}
+              >
                 Plan your Wedding
               </button>
             </div>
+            
           </div>
 
           <div
@@ -96,6 +102,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
+          <WeddingInquiryModal
+              isOpen={isOpen}
+              onClose={() => setIsOpen(false)}
+            />
     </div>
   );
 };

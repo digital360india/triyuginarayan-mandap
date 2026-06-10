@@ -12,9 +12,9 @@ const WeddingForm = () => {
     groomName: "",
     phone: "",
     email: "",
-    weddingDate: "",
+    date: "",
     guests: "",
-    stayNights: "",
+    nights: "",
   });
 
   const [message, setMessage] = useState("");
@@ -30,7 +30,7 @@ const WeddingForm = () => {
     setMessage("");
 
     try {
-      const res = await fetch("/api/sendWeddingForm", {
+      const res = await fetch("/api/wedding-inquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -47,9 +47,9 @@ const WeddingForm = () => {
           groomName: "",
           phone: "",
           email: "",
-          weddingDate: "",
+          date: "",
           guests: "",
-          stayNights: "",
+          nights: "",
         });
       } else {
         setMessage("Submission failed. Try again.");
@@ -158,8 +158,8 @@ const WeddingForm = () => {
               <label className="font-semibold">Preferred Wedding Date</label>
               <input
                 type="date"
-                name="weddingDate"
-                value={formData.weddingDate}
+                name="date"
+                value={formData.date}
                 onChange={handleChange}
                 className="bg-[#EBEBEB] p-4 rounded-[7px] outline-none"
                 required
@@ -185,8 +185,8 @@ const WeddingForm = () => {
             <label className="font-semibold">No. of Stay Night Required</label>
             <input
               type="text"
-              name="stayNights"
-              value={formData.stayNights}
+              name="nights"
+              value={formData.nights}
               onChange={handleChange}
               placeholder="Enter Number of Nights"
               className="bg-[#EBEBEB] p-4 rounded-[7px] outline-none"

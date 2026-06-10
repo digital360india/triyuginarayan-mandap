@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 import { FaCheckCircle } from "react-icons/fa";
+import WeddingInquiryModal from "../global/WeddingInquiryModal";
 
 const features = [
   "Wedding Rituals by Local Purohit",
@@ -121,6 +122,7 @@ const plans = [
 ];
 
 export default function Plans() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="max-w-6xl mx-auto p-6 relative">
       {/* Plan Buttons */}
@@ -163,14 +165,14 @@ export default function Plans() {
             <button
               className="w-full text-white py-2 rounded-lg self-end mt-2 open-sans"
               style={{ backgroundColor: plan.color }}
+              onClick={() => setIsOpen(true)}
             >
               Select Package
             </button>
           </div>
         ))}
       </div>
-
-     
+      <WeddingInquiryModal isOpen={isOpen} onClose={() => setIsOpen(false)} />     
     </div>
   );
 }

@@ -11,7 +11,7 @@ const OurMission = () => {
         We want every couple to have a real, sacred, and affordable temple
         wedding, without stress, confusion, or over-spending. We&apos;re not here to
         sell packages. We&apos;re here to support marriages, the way our elders
-        taught us — with love, faith, and full sincerity.
+        taught us - with love, faith, and full sincerity.
       </p>
     </div>
   );

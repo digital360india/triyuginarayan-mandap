@@ -11,8 +11,8 @@ const WhyTriyuginarayan = () => {
           <span className="text-[#C95D2F]"> Triyuginarayan?</span>
         </p>
         <p className="md:mt-[2.19rem] text-[1rem] md:text-lg text-justify md:text-start open-sans">
-          We don&apos;t do weddings everywhere. We serve only one place —
-          Triyuginarayan Temple — because we truly believe this is not an
+          We don&apos;t do weddings everywhere. We serve only one place -
+          Triyuginarayan Temple - because we truly believe this is not an
           ordinary wedding venue. This is the original mandap, where the eternal
           bond of Shiva and Parvati was formed. The fire still burns. The air
           still carries the mantras. And every wedding here becomes part of
