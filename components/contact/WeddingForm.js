@@ -5,64 +5,63 @@ import Image from "next/image";
 import email from "../../assets/images/badges/email.svg";
 import whatsapp from "../../assets/images/badges/whatsapp.svg";
 import arrow from "../../assets/images/arrow.png";
+import { useRouter } from "next/navigation";
+
+const initialFormData = {
+  brideName: "",
+  groomName: "",
+  phone: "",
+  email: "",
+  date: "",
+  guests: "",
+  nights: "",
+};
+
 
 const WeddingForm = () => {
-  const [formData, setFormData] = useState({
-    brideName: "",
-    groomName: "",
-    phone: "",
-    email: "",
-    date: "",
-    guests: "",
-    nights: "",
-  });
-
+  const router = useRouter();
+  const [formData, setFormData] = useState(initialFormData);
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+
 
   const handleChange = (e) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsLoading(true);
-    setMessage("");
+  e.preventDefault();
+  setIsLoading(true);
+  setMessage("");
 
-    try {
-      const res = await fetch("/api/wedding-inquiry", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+  try {
+    const res = await fetch("/api/wedding-inquiry", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
 
-      const data = await res.json();
+    const data = await res.json();
 
-      if (res.ok) {
-        setMessage("Form submitted successfully!");
-        window.alert("✅ Form submitted successfully!");
-
-        setFormData({
-          brideName: "",
-          groomName: "",
-          phone: "",
-          email: "",
-          date: "",
-          guests: "",
-          nights: "",
-        });
-      } else {
-        setMessage("Submission failed. Try again.");
-        window.alert("❌ Submission failed. Try again.");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      setMessage("Something went wrong.");
-      window.alert("❌ Something went wrong.");
-    } finally {
-      setIsLoading(false);
+    if (!res.ok) {
+      throw new Error(data.message || "Failed to submit inquiry");
     }
-  };
+
+    setMessage("✅ Inquiry submitted successfully!");
+    setFormData(initialFormData);
+
+    setTimeout(() => {
+      router.push("/thank-you");
+    }, 1500);
+  } catch (error) {
+    console.error(error);
+    setMessage("❌ Something went wrong.");
+  } finally {
+    setIsLoading(false);
+  }
+};
 
   return (
     <div className="flex flex-col lg:flex-row px-8 md:px-10 mb-25 mt-25 max-w-[1440px] w-full m-auto">
